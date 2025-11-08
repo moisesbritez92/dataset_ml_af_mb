@@ -1,0 +1,159 @@
+feature,importance
+num__LA Media,0.25860363206841563
+num__LA OS,0.144296723073757
+num__Ratio Cerca/Lejos,0.07365858599413405
+num__LA OD,0.06326873885876924
+num__Querato OS Eje 2,0.051107279592418245
+num__hº ocio exteriores sem,0.040868074837155974
+num__Querato OD Eje2,0.03457316826607314
+num__Querato OD,0.024273164591668853
+num__DE Nasal,0.022858860745536967
+num__Querato OS,0.021350057737798297
+num__hº estudiar sem,0.018969891476825082
+num__hº deporte sem,0.017969628068192488
+num__DE Temporal,0.01698244772492861
+num__horas interior sem,0.014814011691402515
+num__OS-DS,0.01460533083349799
+num__horas exterior sem,0.013931783571808867
+num__CUVAF-DS,0.013147250948227962
+cat__fototipo_E,0.01245276288431673
+num__hº ocio inter sem,0.010954321982798531
+num__OD-DS,0.008497583105821159
+num__Promedio Temporal,0.007304258589809257
+num__Suma Temporal,0.007215260228221085
+num__edad,0.006003308692112046
+num__hº naturaleza sem,0.005850643044061582
+num__OD-Total,0.005664714047538145
+num__OS-Total,0.005650538132667755
+num__OD-Media,0.005648619327390502
+num__OS-Media,0.0051733818601611865
+num__CUVAF-Media,0.005021851379446806
+cat__toma sol_NO,0.00498600091928765
+num__CUVAF-Total,0.004967120606948536
+num__Suma Nasal,0.004845439915964645
+cat__fototipo_Fototipo 4,0.004652453577058622
+num__Promedio Nasal,0.004526688361185455
+cat__familiar miope_Madre,0.0037812320212766825
+cat__Familiar MM SI/NO_Si,0.003436744048474688
+"cat__familiar miope_Padre, Madre, Hermanos",0.0031512038822334816
+cat__fototipo_Fototipo 2,0.00278322583120027
+cat__pat. Ret. Miop magna_No,0.002756711448669521
+cat__pat. Ret. Miop magna_No lo se,0.002126803078345852
+cat__toma sol_SI,0.0019692841561365425
+cat__familiar miope_Hermanos,0.001959182922935601
+num__Familiar miope num.,0.001830682957945859
+cat__origen antepasados (españa)_Navarra,0.0017489261678678902
+cat__fototipo_Fototipo 3,0.00160759763665702
+cat__protege sol_SI,0.0015815772645155143
+"cat__familiar miope_Padre, Hermanos",0.0015382457943606397
+cat__familiar miope magno_Hermanos,0.0015172870816303676
+cat__familiar miope_No,0.001505592526140988
+cat__familiar miope magno_No,0.0012729395908670207
+cat__Interior Mcho_SI,0.001198205637384374
+cat__fototipo_Fototipo 1,0.0011389988564787115
+cat__familiar miope magno_No lo se,0.0008444123362312176
+cat__protege sol_NO,0.0007991447051056932
+cat__disp.elec.antes dormir_Siempre,0.0007406782592276107
+cat__origen antepasados (españa)_Bizkaia,0.0007232229549534214
+cat__sexo_Mujer,0.0006587537625980171
+"cat__familiar miope_Madre, Hermanos",0.0005848481580888283
+cat__familiar miope_No lo se,0.0005771640767905629
+cat__sexo_Hombre,0.0005725807218923603
+cat__Exterior Mucho_NO,0.0004891109654926874
+cat__origen antepasados (españa)_Guipúzcoa,0.0004289674766823241
+cat__Interior Mcho_NO,0.0003652060231720961
+cat__Familiar MM SI/NO_No lo se,0.0003429749556637068
+cat__Exterior Mucho_SI,0.00034211994826943264
+cat__origen antepasados (españa)_Galicia,0.00029672741646902153
+cat__fumador_SI,0.00016885224755690007
+cat__fumador_NO,0.00010698159083014928
+cat__disp.elec.antes dormir_A veces,0.00010394519253484532
+cat__origen antepasados (españa)_Gipuzkoa,9.765817665279071e-05
+cat__Familiar MM SI/NO_No,8.978777435153274e-05
+cat__Grupo fot_E,6.884561891515984e-05
+cat__origen antepasados (españa)_Andalucía (Granada y Málaga),0.0
+cat__origen antepasados (españa)_Aragón,0.0
+cat__origen antepasados (españa)_Barcelona,0.0
+"cat__origen antepasados (españa)_Barcelona, asturias y la rioja",0.0
+cat__origen antepasados (españa)_Badajoz y Navarra,0.0
+cat__origen antepasados (españa)_Asturias,0.0
+cat__origen antepasados (españa)_Burgos/Valladolid,0.0
+cat__origen antepasados (españa)_Burgos,0.0
+cat__origen antepasados (españa)_Cadiz,0.0
+cat__origen antepasados (españa)_Cantabria,0.0
+cat__origen antepasados (españa)_Castilla-La Mancha,0.0
+cat__origen antepasados (españa)_Ciudad Real,0.0
+cat__origen antepasados (españa)_Castilla y Leon,0.0
+cat__origen antepasados (españa)_Castilla y León y Guipúzcoa,0.0
+cat__origen antepasados (españa)_Cuenca,0.0
+"cat__origen antepasados (españa)_Coruña, Valencia y Madrid",0.0
+cat__origen antepasados (españa)_Cádiz,0.0
+cat__origen antepasados (españa)_Cádiz y Madrid,0.0
+cat__origen antepasados (españa)_Euskadi,0.0
+cat__origen antepasados (españa)_Córdoba,0.0
+cat__origen antepasados (españa)_Alicante y Salamanca,0.0
+cat__origen antepasados (españa)_A coruña,0.0
+"cat__origen antepasados (españa)_Navarra, Santa cruz de tenerife",0.0
+"cat__origen antepasados (españa)_Navarra, País Vasco, la Rioja, Comunidad Valenciana",0.0
+"cat__origen antepasados (españa)_Navarra, País Vasco, Castilla y León",0.0
+"cat__origen antepasados (españa)_Navarra, Extremadura, Cataluña, Aragón",0.0
+cat__origen antepasados (españa)_Navarra y Pais Vasco,0.0
+cat__origen antepasados (españa)_Navarra y León,0.0
+cat__origen antepasados (españa)_Navarra y Guipuzcoa,0.0
+cat__origen antepasados (españa)_Navarra y Galicia,0.0
+cat__origen antepasados (españa)_Navarra y Extremadura,0.0
+cat__origen antepasados (españa)_Navarra y Cataluña,0.0
+cat__origen antepasados (españa)_Navarra y Badajoz,0.0
+cat__origen antepasados (españa)_Navarra y Andalucía,0.0
+cat__origen antepasados (españa)_Málaga y Jaén,0.0
+cat__origen antepasados (españa)_Málaga,0.0
+cat__origen antepasados (españa)_Madrid /Vitoria,0.0
+cat__origen antepasados (españa)_Madrid,0.0
+"cat__origen antepasados (españa)_Guipúzcoa, Teruel, Navarra",0.0
+cat__origen antepasados (españa)_León,0.0
+cat__origen antepasados (españa)_Las Palmas,0.0
+cat__origen antepasados (españa)_La rioja,0.0
+"cat__origen antepasados (españa)_La Rioja, Valladolid, Madrid",0.0
+cat__origen antepasados (españa)_La Rioja,0.0
+cat__origen antepasados (españa)_Jaén,0.0
+cat__origen antepasados (españa)_Illes Balears,0.0
+"cat__origen antepasados (españa)_Gipuzkoa, Navarra",0.0
+"cat__origen antepasados (españa)_Guipúzcoa, Navarra",0.0
+cat__origen antepasados (españa)_Guipúzcoa y Zaragoza,0.0
+cat__origen antepasados (españa)_Guipuzcoa,0.0
+"cat__origen antepasados (españa)_Gipuzkoa, Burgos",0.0
+cat__origen antepasados (españa)_Granada y Jaen,0.0
+"cat__origen antepasados (españa)_Extremadura, Cantabria y Navarra",0.0
+"cat__origen antepasados (españa)_Galicia, Aragón, Salamanca, Badajoz",0.0
+cat__origen antepasados (españa)_Alicante,0.0
+cat__fototipo_L,0.0
+cat__Grupo fot_L,0.0
+cat__origen antepasados (españa)_Zaragoza,0.0
+cat__origen antepasados (españa)_Zamora y León,0.0
+cat__origen antepasados (españa)_zaragoza,0.0
+cat__fototipo_Fototipo 5,0.0
+"cat__origen antepasados (españa)_Pontevedra, gipuzkoa, alicante",0.0
+cat__origen antepasados (españa)_Salamanca,0.0
+cat__origen antepasados (españa)_Santander,0.0
+"cat__origen antepasados (españa)_Sevilla, Pontevedra, Vigo.",0.0
+cat__origen antepasados (españa)_Teruel y Leon,0.0
+cat__origen antepasados (españa)_Toledo,0.0
+cat__origen antepasados (españa)_Valladolid,0.0
+cat__origen antepasados (españa)_Vizcaya,0.0
+cat__origen antepasados (españa)_Zamora,0.0
+cat__origen antepasados (españa)_Padre: Andalucía Madre: Castilla la Mancha,0.0
+"cat__origen antepasados (españa)_Padre Madrileño, Madre Asturiana",0.0
+cat__origen antepasados (españa)_Pamplona,0.0
+cat__origen antepasados (españa)_Palencia,0.0
+cat__origen antepasados (españa)_Navarra/Jaén,0.0
+"cat__origen antepasados (españa)_Navarra, Soria, Cantabria",0.0
+cat__origen antepasados (españa)_Pamplona y Ávila,0.0
+"cat__familiar miope_Padre, Madre",0.0
+"cat__familiar miope magno_Madre, Hermanos",0.0
+cat__familiar miope magno_Madre,0.0
+cat__familiar miope_Padre,0.0
+"cat__familiar miope magno_Padre, Hermanos",0.0
+"cat__pat. Ret. Miop magna_Sí, en ambos ojos",0.0
+"cat__familiar miope magno_No lo se, No",0.0
+cat__familiar miope magno_Padre,0.0
+cat__disp.elec.antes dormir_Nunca,0.0
