@@ -29,8 +29,8 @@
     
       <div class="crossnote markdown-preview  ">
       
-<h1 id="-clasificación-jerárquica-de-miopía---documentación-completa">📊 Clasificación Jerárquica de Miopía - Documentación Completa </h1>
-<h2 id="-índice">📑 Índice </h2>
+<h1 id="clasificación-jerárquica-de-miopía---documentación-completa">Clasificación Jerárquica de Miopía - Documentación Completa </h1>
+<h2 id="índice">Índice </h2>
 <ul>
 <li><a href="#descripci%C3%B3n-general">Descripción General</a></li>
 <li><a href="#requisitos">Requisitos</a></li>
@@ -42,7 +42,7 @@
 <li><a href="#resultados-y-conclusiones">Resultados y Conclusiones</a></li>
 </ul>
 <hr>
-<h2 id="-descripción-general">📖 Descripción General </h2>
+<h2 id="descripción-general">Descripción General </h2>
 <p>Este notebook implementa y compara <strong>tres estrategias diferentes</strong> para clasificación jerárquica de miopía:</p>
 <ol>
 <li><strong>Top-Down</strong>: Predice directamente las 4 clases (C, M1, M2, MM) y mapea a la jerarquía</li>
@@ -61,7 +61,7 @@ Mapeo Jerárquico:
 - DCombo → M (2 clases: NO, SI)
 - DCombo → MM (2 clases: NO, SI)
 </code></pre><hr>
-<h2 id="-requisitos">🔧 Requisitos </h2>
+<h2 id="requisitos">Requisitos </h2>
 <h3 id="software">Software </h3>
 <ul>
 <li>Python 3.8+</li>
@@ -78,7 +78,7 @@ xgboost         <span class="token comment"># Gradient Boosting (opcional)</span
 <li><code>Y_train.csv</code> - Labels jerárquicos (M, MM, Combo, DCombo)</li>
 </ul>
 <hr>
-<h2 id="-estructura-del-notebook">📂 Estructura del Notebook </h2>
+<h2 id="estructura-del-notebook">Estructura del Notebook </h2>
 <p>El notebook está dividido en <strong>2 partes principales</strong> y <strong>46 celdas</strong>:</p>
 <h3 id="parte-1-entrenamiento-de-modelos-secciones-1-10"><strong>PARTE 1: Entrenamiento de Modelos</strong> (Secciones 1-10) </h3>
 <p>Entrenamiento y selección del mejor modelo para DCombo</p>
@@ -86,7 +86,7 @@ xgboost         <span class="token comment"># Gradient Boosting (opcional)</span
 <p>Comparación de 3 estrategias de clasificación jerárquica</p>
 <hr>
 <h1 id="parte-1-entrenamiento-de-modelos">PARTE 1: Entrenamiento de Modelos </h1>
-<h2 id="-sección-1-imports-and-setup">📦 Sección 1: Imports and Setup </h2>
+<h2 id="sección-1-imports-and-setup">Sección 1: Imports and Setup </h2>
 <h3 id="propósito">Propósito </h3>
 <p>Importar todas las librerías necesarias y configurar el entorno.</p>
 <h3 id="componentes-clave">Componentes Clave </h3>
@@ -99,7 +99,7 @@ XGBOOST_AVAILABLE  <span class="token comment"># Flag para XGBoost</span>
 <li><strong>XGBoost</strong>: Gradient boosting (si disponible)</li>
 </ul>
 <hr>
-<h2 id="-sección-2-load-data">📥 Sección 2: Load Data </h2>
+<h2 id="sección-2-load-data">Sección 2: Load Data </h2>
 <h3 id="propósito-1">Propósito </h3>
 <p>Cargar los datos de entrenamiento y preparar el target.</p>
 <h3 id="proceso">Proceso </h3>
@@ -112,7 +112,7 @@ XGBOOST_AVAILABLE  <span class="token comment"># Flag para XGBoost</span>
 <pre data-role="codeBlock" data-info="" class="language-text"><code>✓ Data loaded: 132 samples, 47 features (antes de limpieza)
 ✓ Target classes: ['C', 'M1', 'M2', 'MM']
 </code></pre><hr>
-<h2 id="️-sección-3-helper-functions">🛠️ Sección 3: Helper Functions </h2>
+<h2 id="sección-3-helper-functions">Sección 3: Helper Functions </h2>
 <h3 id="función-1-build_preprocessorx-nan_threshold020">Función 1: <code>build_preprocessor(X, nan_threshold=0.20)</code> </h3>
 <h4 id="propósito-2">Propósito </h4>
 <p>Construir un preprocesador que limpia datos y transforma features.</p>
@@ -180,7 +180,7 @@ categorical_features <span class="token operator">=</span> X<span class="token p
     <span class="token string">'classifier__subsample'</span><span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token number">0.6</span><span class="token punctuation">,</span> <span class="token number">0.8</span><span class="token punctuation">,</span> <span class="token number">1.0</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
     <span class="token string">'classifier__colsample_bytree'</span><span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token number">0.6</span><span class="token punctuation">,</span> <span class="token number">0.8</span><span class="token punctuation">,</span> <span class="token number">1.0</span><span class="token punctuation">]</span>
 <span class="token punctuation">}</span>
-</code></pre><p>⚠️ <strong>Requiere label encoding</strong> (strings → integers)</p>
+</code></pre><p><strong>Requiere label encoding</strong> (strings → integers)</p>
 <p><strong>3. Multinomial Naive Bayes</strong></p>
 <pre data-role="codeBlock" data-info="python" class="language-python python"><code>nb_param_grid <span class="token operator">=</span> <span class="token punctuation">{</span>
     <span class="token string">'classifier__alpha'</span><span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token number">0.01</span><span class="token punctuation">,</span> <span class="token number">0.1</span><span class="token punctuation">,</span> <span class="token number">0.5</span><span class="token punctuation">,</span> <span class="token number">1.0</span><span class="token punctuation">,</span> <span class="token number">2.0</span><span class="token punctuation">,</span> <span class="token number">5.0</span><span class="token punctuation">]</span>
@@ -274,7 +274,7 @@ cm <span class="token operator">=</span> confusion_matrix<span class="token punc
     <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">.</span>sort_values<span class="token punctuation">(</span><span class="token string">'importance'</span><span class="token punctuation">,</span> ascending<span class="token operator">=</span><span class="token boolean">False</span><span class="token punctuation">)</span>
     <span class="token comment"># Guardado en feature_importances.csv</span>
 </code></pre><hr>
-<h2 id="️-sección-4-build-preprocessor">⚙️ Sección 4: Build Preprocessor </h2>
+<h2 id="sección-4-build-preprocessor">Sección 4: Build Preprocessor </h2>
 <h3 id="propósito-8">Propósito </h3>
 <p>Construir el preprocesador y limpiar <code>X_train</code>.</p>
 <h3 id="proceso-3">Proceso </h3>
@@ -289,7 +289,7 @@ cm <span class="token operator">=</span> confusion_matrix<span class="token punc
     - Categóricas: 15
 ✓ Features después de limpieza: 45 columnas
 </code></pre><hr>
-<h2 id="-sección-5-define-cross-validation-strategy">🎯 Sección 5: Define Cross-Validation Strategy </h2>
+<h2 id="sección-5-define-cross-validation-strategy">Sección 5: Define Cross-Validation Strategy </h2>
 <h3 id="propósito-9">Propósito </h3>
 <p>Configurar estrategia de validación cruzada y métricas.</p>
 <h3 id="configuración">Configuración </h3>
@@ -311,7 +311,7 @@ scoring <span class="token operator">=</span> <span class="token punctuation">{<
 Fold 2: 20% C, 30% M1, 23% M2, 14% MM
 ...
 </code></pre><hr>
-<h2 id="-sección-6-build-and-train-models">🚀 Sección 6: Build and Train Models </h2>
+<h2 id="sección-6-build-and-train-models">Sección 6: Build and Train Models </h2>
 <h3 id="celda-1-build-models">Celda 1: Build Models </h3>
 <pre data-role="codeBlock" data-info="python" class="language-python python"><code>models <span class="token operator">=</span> build_models<span class="token punctuation">(</span>preprocessor<span class="token punctuation">)</span>
 <span class="token comment"># Retorna: {'random_forest': (...), 'xgb': (...), 'nb': (...)}</span>
@@ -332,7 +332,7 @@ Fold 2: 20% C, 30% M1, 23% M2, 14% MM
 <li><strong>Guarda resultados</strong> → <code>cv_results_{model}.csv</code></li>
 </ol>
 <hr>
-<h2 id="-sección-7-compare-models-and-select-best">📊 Sección 7: Compare Models and Select Best </h2>
+<h2 id="sección-7-compare-models-and-select-best">Sección 7: Compare Models and Select Best </h2>
 <h3 id="propósito-10">Propósito </h3>
 <p>Comparar todos los modelos y seleccionar el mejor según F1-macro.</p>
 <h3 id="tabla-de-comparación">Tabla de Comparación </h3>
@@ -345,7 +345,7 @@ nb              0.6500 ± 0.08   0.6000 ± 0.09   0.6200 ± 0.08   0.6100 ± 0.0
                      key<span class="token operator">=</span><span class="token keyword keyword-lambda">lambda</span> x<span class="token punctuation">:</span> x<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token string">'mean_f1_macro'</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span>
 <span class="token comment"># Típicamente: 'random_forest'</span>
 </code></pre><hr>
-<h2 id="️-sección-8-generate-labels-mapping">🏷️ Sección 8: Generate Labels Mapping </h2>
+<h2 id="sección-8-generate-labels-mapping">Sección 8: Generate Labels Mapping </h2>
 <h3 id="propósito-11">Propósito </h3>
 <p>Crear y guardar mapeo de etiquetas.</p>
 <h3 id="archivo-generado-labels_mappingcsv">Archivo Generado: <code>labels_mapping.csv</code> </h3>
@@ -355,7 +355,7 @@ nb              0.6500 ± 0.08   0.6000 ± 0.09   0.6200 ± 0.08   0.6100 ± 0.0
 <span class="token value">2</span><span class="token punctuation">,</span><span class="token value">M2</span><span class="token punctuation">,</span><span class="token value">31</span>
 <span class="token value">3</span><span class="token punctuation">,</span><span class="token value">MM</span><span class="token punctuation">,</span><span class="token value">18</span>
 </code></pre><hr>
-<h2 id="-sección-9-generate-reports-for-best-model">📄 Sección 9: Generate Reports for Best Model </h2>
+<h2 id="sección-9-generate-reports-for-best-model">Sección 9: Generate Reports for Best Model </h2>
 <h3 id="archivos-generados">Archivos Generados </h3>
 <p><strong>1. confusion_matrix.csv</strong></p>
 <pre data-role="codeBlock" data-info="" class="language-text"><code>     C   M1  M2  MM
@@ -376,7 +376,7 @@ num__refraccion_esferica    0.0720
 cat__sexo_M                 0.0650
 ...
 </code></pre><hr>
-<h2 id="-sección-10-summary">✅ Sección 10: Summary </h2>
+<h2 id="sección-10-summary">Sección 10: Summary </h2>
 <h3 id="archivos-generados-parte-1">Archivos Generados (Parte 1) </h3>
 <pre data-role="codeBlock" data-info="" class="language-text"><code>✓ labels_mapping.csv
 ✓ cv_results_random_forest.csv
@@ -387,7 +387,7 @@ cat__sexo_M                 0.0650
 ✓ feature_importances.csv
 </code></pre><hr>
 <h1 id="clasificación-jerárquica-de-miopía---pipeline-completo-con-3-estrategias">Clasificación Jerárquica de Miopía - Pipeline Completo con 3 Estrategias </h1>
-<h2 id="-sección-11-comparación-de-estrategias">🎯 Sección 11: Comparación de Estrategias </h2>
+<h2 id="sección-11-comparación-de-estrategias">Sección 11: Comparación de Estrategias </h2>
 <h3 id="subsección-111-preparación-de-datos">Subsección 11.1: Preparación de Datos </h3>
 <h4 id="propósito-12">Propósito </h4>
 <p>Preparar datos completos con todas las columnas jerárquicas.</p>
@@ -452,7 +452,7 @@ Combo <span class="token operator">=</span> np<span class="token punctuation">.<
     cv<span class="token operator">=</span>cv<span class="token punctuation">,</span>              <span class="token comment"># 5-fold stratified</span>
     method<span class="token operator">=</span><span class="token string">'predict'</span>
 <span class="token punctuation">)</span>
-</code></pre><p><strong>⚠️ IMPORTANTE</strong>: Usa <code>cross_val_predict</code> → predicciones <strong>out-of-fold</strong> (sin overfitting)</p>
+</code></pre><p><strong>IMPORTANTE</strong>: Usa <code>cross_val_predict</code> → predicciones <strong>out-of-fold</strong> (sin overfitting)</p>
 <p><strong>2. Mapeo Jerárquico</strong></p>
 <pre data-role="codeBlock" data-info="python" class="language-python python"><code>M_pred<span class="token punctuation">,</span> MM_pred<span class="token punctuation">,</span> Combo_pred <span class="token operator">=</span> dcombo_to_hierarchical<span class="token punctuation">(</span>y_pred_dcombo<span class="token punctuation">)</span>
 </code></pre><p><strong>3. Resultado</strong></p>
@@ -463,12 +463,16 @@ Combo <span class="token operator">=</span> np<span class="token punctuation">.<
     <span class="token string">'MM'</span><span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token string">'NO'</span><span class="token punctuation">,</span> <span class="token string">'NO'</span><span class="token punctuation">,</span> <span class="token string">'NO'</span><span class="token punctuation">,</span> <span class="token string">'SI'</span><span class="token punctuation">,</span> <span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">]</span>
 <span class="token punctuation">}</span>
 </code></pre><h4 id="ventajas">Ventajas </h4>
-<p>✅ Simple (1 solo modelo)<br>
-✅ Coherencia jerárquica garantizada<br>
-✅ Rápido de entrenar e implementar</p>
+<ul>
+<li>Simple (1 solo modelo)</li>
+<li>Coherencia jerárquica garantizada</li>
+<li>Rápido de entrenar e implementar</li>
+</ul>
 <h4 id="desventajas">Desventajas </h4>
-<p>❌ Problema de 4 clases (más difícil)<br>
-❌ No se especializa por nivel</p>
+<ul>
+<li>Problema de 4 clases (más difícil)</li>
+<li>No se especializa por nivel</li>
+</ul>
 <hr>
 <h3 id="subsección-1121-guardar-modelo-top-down">Subsección 11.2.1: Guardar Modelo Top-Down </h3>
 <h4 id="propósito-13">Propósito </h4>
@@ -630,7 +634,7 @@ y_mm_si_pred <span class="token operator">=</span> y_mm<span class="token punctu
 mm_pred_subset <span class="token operator">=</span> cross_val_predict<span class="token punctuation">(</span>pipeline_mm<span class="token punctuation">,</span> X_m_si_pred<span class="token punctuation">,</span> y_mm_si_pred<span class="token punctuation">,</span> cv<span class="token operator">=</span>cv<span class="token punctuation">)</span>
 mm_pred<span class="token punctuation">[</span>mask_m_si_pred<span class="token punctuation">]</span> <span class="token operator">=</span> mm_pred_subset
 </code></pre><hr>
-<p><strong>NIVEL 3: Clasificador M1 vs M2 ⚡ - OPTIMIZACIÓN INTENSIVA</strong></p>
+<p><strong>NIVEL 3: Clasificador M1 vs M2 - OPTIMIZACIÓN INTENSIVA</strong></p>
 <p><strong>¿Por qué optimización intensiva?</strong><br>
 Este es el nivel más crítico donde el modelo original tenía peor desempeño. Se implementa una búsqueda exhaustiva con:</p>
 <ul>
@@ -700,17 +704,21 @@ dcombo_pred<span class="token punctuation">[</span>mask_mm_si<span class="token 
 <pre data-role="codeBlock" data-info="python" class="language-python python"><code>combo_pred <span class="token operator">=</span> np<span class="token punctuation">.</span>where<span class="token punctuation">(</span>dcombo_pred <span class="token operator">==</span> <span class="token string">'C'</span><span class="token punctuation">,</span> <span class="token string">'C'</span><span class="token punctuation">,</span>
                      np<span class="token punctuation">.</span>where<span class="token punctuation">(</span>dcombo_pred <span class="token operator">==</span> <span class="token string">'MM'</span><span class="token punctuation">,</span> <span class="token string">'MM'</span><span class="token punctuation">,</span> <span class="token string">'M'</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
 </code></pre><h4 id="ventajas-1">Ventajas </h4>
-<p>✅ Especialización por nivel<br>
-✅ Divide problemas complejos<br>
-✅ Mejor para datos desbalanceados<br>
-✅ Cada modelo se enfoca en una decisión<br>
-✅ <strong>GridSearchCV optimiza cada nivel independientemente</strong><br>
-✅ <strong>Balance de clases en nivel M1/M2</strong></p>
+<ul>
+<li>Especialización por nivel</li>
+<li>Divide problemas complejos</li>
+<li>Mejor para datos desbalanceados</li>
+<li>Cada modelo se enfoca en una decisión</li>
+<li><strong>GridSearchCV optimiza cada nivel independientemente</strong></li>
+<li><strong>Balance de clases en nivel M1/M2</strong></li>
+</ul>
 <h4 id="desventajas-1">Desventajas </h4>
-<p>❌ 3 modelos que entrenar y mantener<br>
-❌ Errores se acumulan en cascada<br>
-❌ Mayor complejidad de implementación<br>
-❌ <strong>Búsqueda de hiperparámetros tarda varios minutos</strong></p>
+<ul>
+<li>3 modelos que entrenar y mantener</li>
+<li>Errores se acumulan en cascada</li>
+<li>Mayor complejidad de implementación</li>
+<li><strong>Búsqueda de hiperparámetros tarda varios minutos</strong></li>
+</ul>
 <hr>
 <h3 id="subsección-1131-guardar-modelos-bottom-up">Subsección 11.3.1: Guardar Modelos Bottom-Up </h3>
 <h4 id="propósito-14">Propósito </h4>
@@ -824,14 +832,18 @@ conflicts_resolved <span class="token operator">=</span> <span class="token numb
 <li>Casos con confianza &lt;70% + conflicto → Usar Bottom-Up</li>
 </ul>
 <h4 id="ventajas-2">Ventajas </h4>
-<p>✅ Combina lo mejor de ambos<br>
-✅ Más robusto ante incertidumbre<br>
-✅ Validación cruzada automática<br>
-✅ Adaptativo según confianza</p>
+<ul>
+<li>Combina lo mejor de ambos</li>
+<li>Más robusto ante incertidumbre</li>
+<li>Validación cruzada automática</li>
+<li>Adaptativo según confianza</li>
+</ul>
 <h4 id="desventajas-2">Desventajas </h4>
-<p>❌ Mayor complejidad computacional<br>
-❌ Requiere ambos modelos entrenados<br>
-❌ Umbral de confianza es un hiperparámetro</p>
+<ul>
+<li>Mayor complejidad computacional</li>
+<li>Requiere ambos modelos entrenados</li>
+<li>Umbral de confianza es un hiperparámetro</li>
+</ul>
 <hr>
 <h3 id="subsección-115-comparación-final">Subsección 11.5: Comparación Final </h3>
 <h4 id="tabla-comparativa---accuracy">Tabla Comparativa - Accuracy </h4>
@@ -903,7 +915,7 @@ Se generó un <a href="http://README.md">README.md</a> en <code>models/</code> c
 </code></pre><p><strong>3. Hybrid vs Bottom-Up</strong></p>
 <pre data-role="codeBlock" data-info="" class="language-text"><code>Hybrid es MEJOR por 1.52%
 → La combinación supera a ambos individuales
-</code></pre><h4 id="-estrategia-recomendada-hybrid">🏆 Estrategia Recomendada: HYBRID </h4>
+</code></pre><h4 id="estrategia-recomendada-hybrid">Estrategia Recomendada: HYBRID </h4>
 <p><strong>Accuracy promedio: 76.52%</strong></p>
 <p><strong>Ventajas</strong>:<br>
 ✓ Combina lo mejor de ambos enfoques<br>
@@ -911,7 +923,7 @@ Se generó un <a href="http://README.md">README.md</a> en <code>models/</code> c
 ✓ Más robusto ante casos dudosos<br>
 ✓ Usa Bottom-Up solo cuando hay incertidumbre</p>
 <hr>
-<h2 id="-archivos-generados">📊 Archivos Generados </h2>
+<h2 id="archivos-generados-1">Archivos Generados </h2>
 <h3 id="parte-1-entrenamiento">Parte 1 (Entrenamiento) </h3>
 <pre data-role="codeBlock" data-info="" class="language-text"><code>labels_mapping.csv           - Mapeo de clases
 cv_results_random_forest.csv - Resultados CV Random Forest
@@ -944,7 +956,7 @@ README.md                   - Documentación de modelos guardados
 <pre data-role="codeBlock" data-info="" class="language-text"><code>inference_pipeline.ipynb     - Pipeline limpio para hacer predicciones
                               (carga modelos sin entrenar)
 </code></pre><hr>
-<h2 id="-métricas-y-evaluación">🔬 Métricas y Evaluación </h2>
+<h2 id="métricas-y-evaluación">Métricas y Evaluación </h2>
 <h3 id="métricas-utilizadas">Métricas Utilizadas </h3>
 <p><strong>1. Accuracy (Exactitud)</strong></p>
 <pre data-role="codeBlock" data-info="" class="language-text"><code>Accuracy = (TP + TN) / (TP + TN + FP + FN)
@@ -960,127 +972,12 @@ README.md                   - Documentación de modelos guardados
 <pre data-role="codeBlock" data-info="" class="language-text"><code>Recall = TP / (TP + FN)
 </code></pre><p>¿De lo que era positivo, cuánto detectamos?</p>
 <hr>
-<h2 id="-próximos-pasos-sugeridos">🚀 Próximos Pasos Sugeridos </h2>
-<ol>
-<li>
-<p><strong>Validar con conjunto de test independiente</strong> ✅ PRIORITARIO</p>
+<h2 id="repo-github">Repo github: </h2>
+<p><a href="https://github.com/moisesbritez92/dataset_ml_af_mb">Repositorio en GitHub — dataset_ml_af_mb</a></p>
+<h2 id="referencias">Referencias: </h2>
 <ul>
-<li>Usar <code>inference_pipeline.ipynb</code> con X_test.csv</li>
-<li>Evaluar estrategias en datos nunca vistos</li>
-<li>Comparar rendimiento train vs test</li>
-</ul>
-</li>
-<li>
-<p><strong>Analizar casos específicos de error</strong></p>
-<ul>
-<li>¿Qué características tienen los casos mal clasificados?</li>
-<li>¿Hay patrones en los errores?</li>
-<li>Matriz de confusión detallada por estrategia</li>
-</ul>
-</li>
-<li>
-<p>✅ <strong>COMPLETADO: Optimización de hiperparámetros Bottom-Up</strong></p>
-<ul>
-<li><s>GridSearchCV en cada nivel de la cascada</s> ✅</li>
-<li><s>Optimizar max_depth, n_estimators individualmente</s> ✅</li>
-<li><s>Especial enfoque en M1 vs M2</s> ✅</li>
-<li><s>Incluir class_weight para balance</s> ✅</li>
-</ul>
-</li>
-<li>
-<p><strong>Implementar en producción</strong></p>
-<ul>
-<li>API REST con FastAPI/Flask</li>
-<li>Cargar modelos desde <code>models/</code></li>
-<li>Dockerizar la solución</li>
-<li>Monitorear drift de datos</li>
-</ul>
-</li>
-<li>
-<p><strong>Explorar mejoras adicionales</strong></p>
-<ul>
-<li>Feature engineering adicional</li>
-<li>Modelos más complejos (CatBoost, LightGBM)</li>
-<li>Ensemble de estrategias</li>
-<li><strong>Entrenar con GPU</strong> (XGBoost con tree_method='gpu_hist')</li>
-</ul>
-</li>
-<li>
-<p><strong>Usar notebook de inferencia</strong></p>
-<ul>
-<li>Ejecutar <code>inference_pipeline.ipynb</code></li>
-<li>Cargar modelos guardados en <code>models/</code></li>
-<li>Hacer predicciones sin re-entrenar</li>
-<li>Comparar las 3 estrategias en nuevos datos</li>
-</ul>
-</li>
-</ol>
-<hr>
-<h2 id="-notas-importantes">📝 Notas Importantes </h2>
-<h3 id="️-cross-validation-vs-training-predictions">⚠️ Cross-Validation vs Training Predictions </h3>
-<p><strong>CORRECTO</strong> ✅:</p>
-<pre data-role="codeBlock" data-info="python" class="language-python python"><code>y_pred <span class="token operator">=</span> cross_val_predict<span class="token punctuation">(</span>model<span class="token punctuation">,</span> X<span class="token punctuation">,</span> y<span class="token punctuation">,</span> cv<span class="token operator">=</span>cv<span class="token punctuation">)</span>
-</code></pre><p>→ Predicciones "out-of-fold" (sin ver datos de entrenamiento)</p>
-<p><strong>INCORRECTO</strong> ❌:</p>
-<pre data-role="codeBlock" data-info="python" class="language-python python"><code>model<span class="token punctuation">.</span>fit<span class="token punctuation">(</span>X<span class="token punctuation">,</span> y<span class="token punctuation">)</span>
-y_pred <span class="token operator">=</span> model<span class="token punctuation">.</span>predict<span class="token punctuation">(</span>X<span class="token punctuation">)</span>
-</code></pre><p>→ Overfitting garantizado (métricas infladas)</p>
-<h3 id="-data-leakage-prevention">🔍 Data Leakage Prevention </h3>
-<ol>
-<li>
-<p><strong>Preprocessing dentro de Pipeline</strong></p>
-<ul>
-<li>StandardScaler se ajusta solo en train, no en test</li>
-<li>OneHotEncoder aprende categorías solo en train</li>
-</ul>
-</li>
-<li>
-<p><strong>Cross-validation estratificado</strong></p>
-<ul>
-<li>Mantiene proporciones de clases en cada fold</li>
-</ul>
-</li>
-<li>
-<p><strong>Limpieza de datos</strong></p>
-<ul>
-<li>Se hace ANTES de split train/test</li>
-<li>O se hace dentro de build_preprocessor</li>
-</ul>
-</li>
-</ol>
-<hr>
-<h2 id="-contribuciones">🤝 Contribuciones </h2>
-<p>Para mejorar este notebook:</p>
-<ol>
-<li>Fork el repositorio</li>
-<li>Crea una rama (<code>git checkout -b feature/mejora</code>)</li>
-<li>Commit tus cambios (<code>git commit -am 'Añadir mejora'</code>)</li>
-<li>Push a la rama (<code>git push origin feature/mejora</code>)</li>
-<li>Crea un Pull Request</li>
-</ol>
-<hr>
-<h2 id="-licencia">📜 Licencia </h2>
-<p>Este proyecto está bajo licencia MIT.</p>
-<hr>
-<h2 id="-autores">👥 Autores </h2>
-<ul>
-<li><strong>Equipo de Machine Learning</strong> - Clasificación de Miopía</li>
-<li><strong>Dataset</strong>: 132 muestras de pacientes</li>
-<li><strong>Fecha</strong>: Noviembre 2025</li>
-</ul>
-<hr>
-<h2 id="-contacto">📞 Contacto </h2>
-<p>Para preguntas o sugerencias sobre este notebook, por favor contactar al equipo de desarrollo.</p>
-<hr>
-<p><strong>Última actualización</strong>: Noviembre 9, 2025</p>
-<p><strong>Cambios recientes</strong>:</p>
-<ul>
-<li>✅ Implementada optimización Bottom-Up con GridSearchCV</li>
-<li>✅ Búsqueda intensiva de hiperparámetros en nivel M1/M2</li>
-<li>✅ Balance de clases con class_weight='balanced_subsample'</li>
-<li>✅ Guardado de modelos en carpeta <code>models/</code></li>
-<li>✅ Creado notebook de inferencia <code>inference_pipeline.ipynb</code></li>
-<li>✅ README automático de modelos generado</li>
+<li>Github copilot</li>
+<li>Hands-on Machine Learning with Scikit-Learn, Keras, and TensorFlow - Aurélien Géron</li>
 </ul>
 
       </div>
