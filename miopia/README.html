@@ -1,0 +1,1096 @@
+<!DOCTYPE html><html><head>
+      <title>README</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      
+      
+        <script type="text/javascript">
+          window.MathJax = ({"tex":{"inlineMath":[["$","$"],["\\(","\\)"]],"displayMath":[["$$","$$"],["\\[","\\]"]]},"options":{},"loader":{}});
+        </script>
+        <script type="text/javascript" async="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" charset="UTF-8"></script>
+        
+      
+      
+      
+      
+      
+      <style>
+      code[class*=language-],pre[class*=language-]{color:#333;background:0 0;font-family:Consolas,"Liberation Mono",Menlo,Courier,monospace;text-align:left;white-space:pre;word-spacing:normal;word-break:normal;word-wrap:normal;line-height:1.4;-moz-tab-size:8;-o-tab-size:8;tab-size:8;-webkit-hyphens:none;-moz-hyphens:none;-ms-hyphens:none;hyphens:none}pre[class*=language-]{padding:.8em;overflow:auto;border-radius:3px;background:#f5f5f5}:not(pre)>code[class*=language-]{padding:.1em;border-radius:.3em;white-space:normal;background:#f5f5f5}.token.blockquote,.token.comment{color:#969896}.token.cdata{color:#183691}.token.doctype,.token.macro.property,.token.punctuation,.token.variable{color:#333}.token.builtin,.token.important,.token.keyword,.token.operator,.token.rule{color:#a71d5d}.token.attr-value,.token.regex,.token.string,.token.url{color:#183691}.token.atrule,.token.boolean,.token.code,.token.command,.token.constant,.token.entity,.token.number,.token.property,.token.symbol{color:#0086b3}.token.prolog,.token.selector,.token.tag{color:#63a35c}.token.attr-name,.token.class,.token.class-name,.token.function,.token.id,.token.namespace,.token.pseudo-class,.token.pseudo-element,.token.url-reference .token.variable{color:#795da3}.token.entity{cursor:help}.token.title,.token.title .token.punctuation{font-weight:700;color:#1d3e81}.token.list{color:#ed6a43}.token.inserted{background-color:#eaffea;color:#55a532}.token.deleted{background-color:#ffecec;color:#bd2c00}.token.bold{font-weight:700}.token.italic{font-style:italic}.language-json .token.property{color:#183691}.language-markup .token.tag .token.punctuation{color:#333}.language-css .token.function,code.language-css{color:#0086b3}.language-yaml .token.atrule{color:#63a35c}code.language-yaml{color:#183691}.language-ruby .token.function{color:#333}.language-markdown .token.url{color:#795da3}.language-makefile .token.symbol{color:#795da3}.language-makefile .token.variable{color:#183691}.language-makefile .token.builtin{color:#0086b3}.language-bash .token.keyword{color:#0086b3}pre[data-line]{position:relative;padding:1em 0 1em 3em}pre[data-line] .line-highlight-wrapper{position:absolute;top:0;left:0;background-color:transparent;display:block;width:100%}pre[data-line] .line-highlight{position:absolute;left:0;right:0;padding:inherit 0;margin-top:1em;background:hsla(24,20%,50%,.08);background:linear-gradient(to right,hsla(24,20%,50%,.1) 70%,hsla(24,20%,50%,0));pointer-events:none;line-height:inherit;white-space:pre}pre[data-line] .line-highlight:before,pre[data-line] .line-highlight[data-end]:after{content:attr(data-start);position:absolute;top:.4em;left:.6em;min-width:1em;padding:0 .5em;background-color:hsla(24,20%,50%,.4);color:#f4f1ef;font:bold 65%/1.5 sans-serif;text-align:center;vertical-align:.3em;border-radius:999px;text-shadow:none;box-shadow:0 1px #fff}pre[data-line] .line-highlight[data-end]:after{content:attr(data-end);top:auto;bottom:.4em}html body{font-family:'Helvetica Neue',Helvetica,'Segoe UI',Arial,freesans,sans-serif;font-size:16px;line-height:1.6;color:#333;background-color:#fff;overflow:initial;box-sizing:border-box;word-wrap:break-word}html body>:first-child{margin-top:0}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{line-height:1.2;margin-top:1em;margin-bottom:16px;color:#000}html body h1{font-size:2.25em;font-weight:300;padding-bottom:.3em}html body h2{font-size:1.75em;font-weight:400;padding-bottom:.3em}html body h3{font-size:1.5em;font-weight:500}html body h4{font-size:1.25em;font-weight:600}html body h5{font-size:1.1em;font-weight:600}html body h6{font-size:1em;font-weight:600}html body h1,html body h2,html body h3,html body h4,html body h5{font-weight:600}html body h5{font-size:1em}html body h6{color:#5c5c5c}html body strong{color:#000}html body del{color:#5c5c5c}html body a:not([href]){color:inherit;text-decoration:none}html body a{color:#08c;text-decoration:none}html body a:hover{color:#00a3f5;text-decoration:none}html body img{max-width:100%}html body>p{margin-top:0;margin-bottom:16px;word-wrap:break-word}html body>ol,html body>ul{margin-bottom:16px}html body ol,html body ul{padding-left:2em}html body ol.no-list,html body ul.no-list{padding:0;list-style-type:none}html body ol ol,html body ol ul,html body ul ol,html body ul ul{margin-top:0;margin-bottom:0}html body li{margin-bottom:0}html body li.task-list-item{list-style:none}html body li>p{margin-top:0;margin-bottom:0}html body .task-list-item-checkbox{margin:0 .2em .25em -1.8em;vertical-align:middle}html body .task-list-item-checkbox:hover{cursor:pointer}html body blockquote{margin:16px 0;font-size:inherit;padding:0 15px;color:#5c5c5c;background-color:#f0f0f0;border-left:4px solid #d6d6d6}html body blockquote>:first-child{margin-top:0}html body blockquote>:last-child{margin-bottom:0}html body hr{height:4px;margin:32px 0;background-color:#d6d6d6;border:0 none}html body table{margin:10px 0 15px 0;border-collapse:collapse;border-spacing:0;display:block;width:100%;overflow:auto;word-break:normal;word-break:keep-all}html body table th{font-weight:700;color:#000}html body table td,html body table th{border:1px solid #d6d6d6;padding:6px 13px}html body dl{padding:0}html body dl dt{padding:0;margin-top:16px;font-size:1em;font-style:italic;font-weight:700}html body dl dd{padding:0 16px;margin-bottom:16px}html body code{font-family:Menlo,Monaco,Consolas,'Courier New',monospace;font-size:.85em;color:#000;background-color:#f0f0f0;border-radius:3px;padding:.2em 0}html body code::after,html body code::before{letter-spacing:-.2em;content:'\00a0'}html body pre>code{padding:0;margin:0;word-break:normal;white-space:pre;background:0 0;border:0}html body .highlight{margin-bottom:16px}html body .highlight pre,html body pre{padding:1em;overflow:auto;line-height:1.45;border:#d6d6d6;border-radius:3px}html body .highlight pre{margin-bottom:0;word-break:normal}html body pre code,html body pre tt{display:inline;max-width:initial;padding:0;margin:0;overflow:initial;line-height:inherit;word-wrap:normal;background-color:transparent;border:0}html body pre code:after,html body pre code:before,html body pre tt:after,html body pre tt:before{content:normal}html body blockquote,html body dl,html body ol,html body p,html body pre,html body ul{margin-top:0;margin-bottom:16px}html body kbd{color:#000;border:1px solid #d6d6d6;border-bottom:2px solid #c7c7c7;padding:2px 4px;background-color:#f0f0f0;border-radius:3px}@media print{html body{background-color:#fff}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{color:#000;page-break-after:avoid}html body blockquote{color:#5c5c5c}html body pre{page-break-inside:avoid}html body table{display:table}html body img{display:block;max-width:100%;max-height:100%}html body code,html body pre{word-wrap:break-word;white-space:pre}}.markdown-preview{width:100%;height:100%;box-sizing:border-box}.markdown-preview ul{list-style:disc}.markdown-preview ul ul{list-style:circle}.markdown-preview ul ul ul{list-style:square}.markdown-preview ol{list-style:decimal}.markdown-preview ol ol,.markdown-preview ul ol{list-style-type:lower-roman}.markdown-preview ol ol ol,.markdown-preview ol ul ol,.markdown-preview ul ol ol,.markdown-preview ul ul ol{list-style-type:lower-alpha}.markdown-preview .newpage,.markdown-preview .pagebreak{page-break-before:always}.markdown-preview pre.line-numbers{position:relative;padding-left:3.8em;counter-reset:linenumber}.markdown-preview pre.line-numbers>code{position:relative}.markdown-preview pre.line-numbers .line-numbers-rows{position:absolute;pointer-events:none;top:1em;font-size:100%;left:0;width:3em;letter-spacing:-1px;border-right:1px solid #999;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.markdown-preview pre.line-numbers .line-numbers-rows>span{pointer-events:none;display:block;counter-increment:linenumber}.markdown-preview pre.line-numbers .line-numbers-rows>span:before{content:counter(linenumber);color:#999;display:block;padding-right:.8em;text-align:right}.markdown-preview .mathjax-exps .MathJax_Display{text-align:center!important}.markdown-preview:not([data-for=preview]) .code-chunk .code-chunk-btn-group{display:none}.markdown-preview:not([data-for=preview]) .code-chunk .status{display:none}.markdown-preview:not([data-for=preview]) .code-chunk .output-div{margin-bottom:16px}.markdown-preview .md-toc{padding:0}.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link{display:inline;padding:.25rem 0}.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link div,.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link p{display:inline}.markdown-preview .md-toc .md-toc-link-wrapper.highlighted .md-toc-link{font-weight:800}.scrollbar-style::-webkit-scrollbar{width:8px}.scrollbar-style::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}.scrollbar-style::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,.66);border:4px solid rgba(150,150,150,.66);background-clip:content-box}html body[for=html-export]:not([data-presentation-mode]){position:relative;width:100%;height:100%;top:0;left:0;margin:0;padding:0;overflow:auto}html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{position:relative;top:0;min-height:100vh}@media screen and (min-width:914px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{padding:2em calc(50% - 457px + 2em)}}@media screen and (max-width:914px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{font-size:14px!important;padding:1em}}@media print{html body[for=html-export]:not([data-presentation-mode]) #sidebar-toc-btn{display:none}}html body[for=html-export]:not([data-presentation-mode]) #sidebar-toc-btn{position:fixed;bottom:8px;left:8px;font-size:28px;cursor:pointer;color:inherit;z-index:99;width:32px;text-align:center;opacity:.4}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] #sidebar-toc-btn{opacity:1}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc{position:fixed;top:0;left:0;width:300px;height:100%;padding:32px 0 48px 0;font-size:14px;box-shadow:0 0 4px rgba(150,150,150,.33);box-sizing:border-box;overflow:auto;background-color:inherit}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar{width:8px}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,.66);border:4px solid rgba(150,150,150,.66);background-clip:content-box}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc a{text-decoration:none}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc{padding:0 16px}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link{display:inline;padding:.25rem 0}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link div,html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link p{display:inline}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper.highlighted .md-toc-link{font-weight:800}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{left:300px;width:calc(100% - 300px);padding:2em calc(50% - 457px - 300px / 2);margin:0;box-sizing:border-box}@media screen and (max-width:1274px){html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{width:100%}}html body[for=html-export]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .markdown-preview{left:50%;transform:translateX(-50%)}html body[for=html-export]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .md-sidebar-toc{display:none}
+/* Please visit the URL below for more information: */
+/*   https://shd101wyy.github.io/markdown-preview-enhanced/#/customize-css */
+
+      </style>
+      <!-- The content below will be included at the end of the <head> element. --><script type="text/javascript">
+  document.addEventListener("DOMContentLoaded", function () {
+    // your code here
+  });
+</script></head><body for="html-export">
+    
+    
+      <div class="crossnote markdown-preview  ">
+      
+<h1 id="-clasificación-jerárquica-de-miopía---documentación-completa">📊 Clasificación Jerárquica de Miopía - Documentación Completa </h1>
+<h2 id="-índice">📑 Índice </h2>
+<ul>
+<li><a href="#descripci%C3%B3n-general">Descripción General</a></li>
+<li><a href="#requisitos">Requisitos</a></li>
+<li><a href="#estructura-del-notebook">Estructura del Notebook</a></li>
+<li><a href="#parte-1-entrenamiento-de-modelos">Parte 1: Entrenamiento de Modelos</a></li>
+<li><a href="#parte-2-estrategias-jer%C3%A1rquicas">Parte 2: Estrategias Jerárquicas</a></li>
+<li><a href="#funciones-principales">Funciones Principales</a></li>
+<li><a href="#archivos-generados">Archivos Generados</a></li>
+<li><a href="#resultados-y-conclusiones">Resultados y Conclusiones</a></li>
+</ul>
+<hr>
+<h2 id="-descripción-general">📖 Descripción General </h2>
+<p>Este notebook implementa y compara <strong>tres estrategias diferentes</strong> para clasificación jerárquica de miopía:</p>
+<ol>
+<li><strong>Top-Down</strong>: Predice directamente las 4 clases (C, M1, M2, MM) y mapea a la jerarquía</li>
+<li><strong>Bottom-Up</strong>: Clasificación en cascada (M → MM → M1/M2)</li>
+<li><strong>Hybrid</strong>: Combina Top-Down con validación Bottom-Up</li>
+</ol>
+<h3 id="jerarquía-de-clases">Jerarquía de Clases: </h3>
+<pre data-role="codeBlock" data-info="" class="language-text"><code>DCombo (4 clases)
+├── C  (Control - sin miopía)
+├── M1 (Miopía tipo 1)
+├── M2 (Miopía tipo 2)
+└── MM (Miopía Magna)
+
+Mapeo Jerárquico:
+- DCombo → Combo (3 clases: C, M, MM)
+- DCombo → M (2 clases: NO, SI)
+- DCombo → MM (2 clases: NO, SI)
+</code></pre><hr>
+<h2 id="-requisitos">🔧 Requisitos </h2>
+<h3 id="software">Software </h3>
+<ul>
+<li>Python 3.8+</li>
+<li>Jupyter Notebook / VS Code</li>
+</ul>
+<h3 id="librerías">Librerías </h3>
+<pre data-role="codeBlock" data-info="python" class="language-python python"><code>pandas          <span class="token comment"># Manipulación de datos</span>
+numpy           <span class="token comment"># Operaciones numéricas</span>
+scikit<span class="token operator">-</span>learn    <span class="token comment"># Modelos ML y evaluación</span>
+xgboost         <span class="token comment"># Gradient Boosting (opcional)</span>
+</code></pre><h3 id="archivos-de-entrada">Archivos de Entrada </h3>
+<ul>
+<li><code>X_train.csv</code> - Features de entrenamiento (132 muestras)</li>
+<li><code>Y_train.csv</code> - Labels jerárquicos (M, MM, Combo, DCombo)</li>
+</ul>
+<hr>
+<h2 id="-estructura-del-notebook">📂 Estructura del Notebook </h2>
+<p>El notebook está dividido en <strong>2 partes principales</strong> y <strong>46 celdas</strong>:</p>
+<h3 id="parte-1-entrenamiento-de-modelos-secciones-1-10"><strong>PARTE 1: Entrenamiento de Modelos</strong> (Secciones 1-10) </h3>
+<p>Entrenamiento y selección del mejor modelo para DCombo</p>
+<h3 id="parte-2-estrategias-jerárquicas-sección-11"><strong>PARTE 2: Estrategias Jerárquicas</strong> (Sección 11) </h3>
+<p>Comparación de 3 estrategias de clasificación jerárquica</p>
+<hr>
+<h1 id="parte-1-entrenamiento-de-modelos">PARTE 1: Entrenamiento de Modelos </h1>
+<h2 id="-sección-1-imports-and-setup">📦 Sección 1: Imports and Setup </h2>
+<h3 id="propósito">Propósito </h3>
+<p>Importar todas las librerías necesarias y configurar el entorno.</p>
+<h3 id="componentes-clave">Componentes Clave </h3>
+<pre data-role="codeBlock" data-info="python" class="language-python python"><code>RANDOM_STATE <span class="token operator">=</span> <span class="token number">42</span>  <span class="token comment"># Reproducibilidad</span>
+XGBOOST_AVAILABLE  <span class="token comment"># Flag para XGBoost</span>
+</code></pre><h3 id="librerías-importadas">Librerías Importadas </h3>
+<ul>
+<li><strong>Pandas/Numpy</strong>: Manipulación de datos</li>
+<li><strong>Sklearn</strong>: Pipeline, transformers, modelos, métricas</li>
+<li><strong>XGBoost</strong>: Gradient boosting (si disponible)</li>
+</ul>
+<hr>
+<h2 id="-sección-2-load-data">📥 Sección 2: Load Data </h2>
+<h3 id="propósito-1">Propósito </h3>
+<p>Cargar los datos de entrenamiento y preparar el target.</p>
+<h3 id="proceso">Proceso </h3>
+<ol>
+<li>Carga <code>X_train.csv</code> y <code>Y_train.csv</code></li>
+<li><strong>NO elimina</strong> 'fecha' ni columnas con NaN (se hace en <code>build_preprocessor</code>)</li>
+<li>Define <code>y_train = DCombo</code> como target principal</li>
+</ol>
+<h3 id="salida">Salida </h3>
+<pre data-role="codeBlock" data-info="" class="language-text"><code>✓ Data loaded: 132 samples, 47 features (antes de limpieza)
+✓ Target classes: ['C', 'M1', 'M2', 'MM']
+</code></pre><hr>
+<h2 id="️-sección-3-helper-functions">🛠️ Sección 3: Helper Functions </h2>
+<h3 id="función-1-build_preprocessorx-nan_threshold020">Función 1: <code>build_preprocessor(X, nan_threshold=0.20)</code> </h3>
+<h4 id="propósito-2">Propósito </h4>
+<p>Construir un preprocesador que limpia datos y transforma features.</p>
+<h4 id="parámetros">Parámetros </h4>
+<ul>
+<li><code>X</code>: DataFrame de features</li>
+<li><code>nan_threshold</code>: Umbral máximo de NaN permitido (default 20%)</li>
+</ul>
+<h4 id="proceso-paso-a-paso">Proceso Paso a Paso </h4>
+<p><strong>1. Limpieza de Datos</strong></p>
+<pre data-role="codeBlock" data-info="python" class="language-python python"><code><span class="token comment"># Eliminar columna 'fecha' si existe</span>
+<span class="token keyword keyword-if">if</span> <span class="token string">'fecha'</span> <span class="token keyword keyword-in">in</span> X_clean<span class="token punctuation">.</span>columns<span class="token punctuation">:</span>
+    X_clean <span class="token operator">=</span> X_clean<span class="token punctuation">.</span>drop<span class="token punctuation">(</span>columns<span class="token operator">=</span><span class="token punctuation">[</span><span class="token string">'fecha'</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+
+<span class="token comment"># Eliminar columnas con &gt;20% NaN</span>
+nan_percentage <span class="token operator">=</span> X_clean<span class="token punctuation">.</span>isna<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token builtin">sum</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">/</span> <span class="token builtin">len</span><span class="token punctuation">(</span>X_clean<span class="token punctuation">)</span>
+cols_to_drop <span class="token operator">=</span> nan_percentage<span class="token punctuation">[</span>nan_percentage <span class="token operator">&gt;</span> nan_threshold<span class="token punctuation">]</span>
+</code></pre><p><strong>2. Detección Automática de Tipos</strong></p>
+<pre data-role="codeBlock" data-info="python" class="language-python python"><code>numeric_features <span class="token operator">=</span> X<span class="token punctuation">.</span>select_dtypes<span class="token punctuation">(</span>include<span class="token operator">=</span><span class="token punctuation">[</span><span class="token string">'int64'</span><span class="token punctuation">,</span> <span class="token string">'float64'</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+categorical_features <span class="token operator">=</span> X<span class="token punctuation">.</span>select_dtypes<span class="token punctuation">(</span>include<span class="token operator">=</span><span class="token punctuation">[</span><span class="token string">'object'</span><span class="token punctuation">,</span> <span class="token string">'category'</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+</code></pre><p><strong>3. Construcción de Transformadores</strong></p>
+<ul>
+<li>
+<p><strong>Numéricas</strong>:</p>
+<ul>
+<li><code>SimpleImputer(strategy='median')</code> → Rellena NaN con mediana</li>
+<li><code>StandardScaler(with_mean=False)</code> → Normaliza sin centrar (compatible con sparse)</li>
+</ul>
+</li>
+<li>
+<p><strong>Categóricas</strong>:</p>
+<ul>
+<li><code>SimpleImputer(strategy='most_frequent')</code> → Rellena NaN con moda</li>
+<li><code>OneHotEncoder(handle_unknown='ignore')</code> → Codificación one-hot</li>
+</ul>
+</li>
+</ul>
+<p><strong>4. ColumnTransformer</strong></p>
+<pre data-role="codeBlock" data-info="python" class="language-python python"><code>preprocessor <span class="token operator">=</span> ColumnTransformer<span class="token punctuation">(</span><span class="token punctuation">[</span>
+    <span class="token punctuation">(</span><span class="token string">'num'</span><span class="token punctuation">,</span> numeric_transformer<span class="token punctuation">,</span> numeric_features<span class="token punctuation">)</span><span class="token punctuation">,</span>
+    <span class="token punctuation">(</span><span class="token string">'cat'</span><span class="token punctuation">,</span> categorical_transformer<span class="token punctuation">,</span> categorical_features<span class="token punctuation">)</span>
+<span class="token punctuation">]</span><span class="token punctuation">,</span> remainder<span class="token operator">=</span><span class="token string">'drop'</span><span class="token punctuation">)</span>
+</code></pre><h4 id="retorna">Retorna </h4>
+<ul>
+<li><code>(preprocessor, X_clean)</code> → Tuple con preprocesador y datos limpios</li>
+</ul>
+<hr>
+<h3 id="función-2-build_modelspreprocessor">Función 2: <code>build_models(preprocessor)</code> </h3>
+<h4 id="propósito-3">Propósito </h4>
+<p>Crear diccionario de modelos con sus pipelines y grids de hiperparámetros.</p>
+<h4 id="modelos-configurados">Modelos Configurados </h4>
+<p><strong>1. Random Forest</strong></p>
+<pre data-role="codeBlock" data-info="python" class="language-python python"><code>rf_param_grid <span class="token operator">=</span> <span class="token punctuation">{</span>
+    <span class="token string">'classifier__n_estimators'</span><span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token number">50</span><span class="token punctuation">,</span> <span class="token number">100</span><span class="token punctuation">,</span> <span class="token number">200</span><span class="token punctuation">,</span> <span class="token number">300</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+    <span class="token string">'classifier__max_depth'</span><span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token boolean">None</span><span class="token punctuation">,</span> <span class="token number">5</span><span class="token punctuation">,</span> <span class="token number">10</span><span class="token punctuation">,</span> <span class="token number">15</span><span class="token punctuation">,</span> <span class="token number">20</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+    <span class="token string">'classifier__min_samples_split'</span><span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">5</span><span class="token punctuation">,</span> <span class="token number">10</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+    <span class="token string">'classifier__min_samples_leaf'</span><span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">4</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+    <span class="token string">'classifier__max_features'</span><span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token string">'sqrt'</span><span class="token punctuation">,</span> <span class="token string">'log2'</span><span class="token punctuation">,</span> <span class="token boolean">None</span><span class="token punctuation">]</span>
+<span class="token punctuation">}</span>
+</code></pre><p><strong>2. XGBoost</strong> (si disponible)</p>
+<pre data-role="codeBlock" data-info="python" class="language-python python"><code>xgb_param_grid <span class="token operator">=</span> <span class="token punctuation">{</span>
+    <span class="token string">'classifier__n_estimators'</span><span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token number">50</span><span class="token punctuation">,</span> <span class="token number">100</span><span class="token punctuation">,</span> <span class="token number">200</span><span class="token punctuation">,</span> <span class="token number">300</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+    <span class="token string">'classifier__max_depth'</span><span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token number">3</span><span class="token punctuation">,</span> <span class="token number">5</span><span class="token punctuation">,</span> <span class="token number">7</span><span class="token punctuation">,</span> <span class="token number">9</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+    <span class="token string">'classifier__learning_rate'</span><span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token number">0.01</span><span class="token punctuation">,</span> <span class="token number">0.05</span><span class="token punctuation">,</span> <span class="token number">0.1</span><span class="token punctuation">,</span> <span class="token number">0.2</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+    <span class="token string">'classifier__subsample'</span><span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token number">0.6</span><span class="token punctuation">,</span> <span class="token number">0.8</span><span class="token punctuation">,</span> <span class="token number">1.0</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+    <span class="token string">'classifier__colsample_bytree'</span><span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token number">0.6</span><span class="token punctuation">,</span> <span class="token number">0.8</span><span class="token punctuation">,</span> <span class="token number">1.0</span><span class="token punctuation">]</span>
+<span class="token punctuation">}</span>
+</code></pre><p>⚠️ <strong>Requiere label encoding</strong> (strings → integers)</p>
+<p><strong>3. Multinomial Naive Bayes</strong></p>
+<pre data-role="codeBlock" data-info="python" class="language-python python"><code>nb_param_grid <span class="token operator">=</span> <span class="token punctuation">{</span>
+    <span class="token string">'classifier__alpha'</span><span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token number">0.01</span><span class="token punctuation">,</span> <span class="token number">0.1</span><span class="token punctuation">,</span> <span class="token number">0.5</span><span class="token punctuation">,</span> <span class="token number">1.0</span><span class="token punctuation">,</span> <span class="token number">2.0</span><span class="token punctuation">,</span> <span class="token number">5.0</span><span class="token punctuation">]</span>
+<span class="token punctuation">}</span>
+</code></pre><h4 id="retorna-1">Retorna </h4>
+<pre data-role="codeBlock" data-info="python" class="language-python python"><code><span class="token punctuation">{</span>
+    <span class="token string">'model_name'</span><span class="token punctuation">:</span> <span class="token punctuation">(</span>pipeline<span class="token punctuation">,</span> param_grid<span class="token punctuation">,</span> needs_label_encoding<span class="token punctuation">)</span><span class="token punctuation">,</span>
+    <span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span>
+<span class="token punctuation">}</span>
+</code></pre><hr>
+<h3 id="función-3-evaluate_with_cvmodel-x-y-cv-scoring">Función 3: <code>evaluate_with_cv(model, X, y, cv, scoring)</code> </h3>
+<h4 id="propósito-4">Propósito </h4>
+<p>Evaluar modelo usando cross-validation con múltiples métricas.</p>
+<h4 id="proceso-1">Proceso </h4>
+<pre data-role="codeBlock" data-info="python" class="language-python python"><code>cv_results <span class="token operator">=</span> cross_validate<span class="token punctuation">(</span>
+    model<span class="token punctuation">,</span> X<span class="token punctuation">,</span> y<span class="token punctuation">,</span>
+    cv<span class="token operator">=</span>cv<span class="token punctuation">,</span>                    <span class="token comment"># StratifiedKFold</span>
+    scoring<span class="token operator">=</span>scoring<span class="token punctuation">,</span>          <span class="token comment"># Dict con 4 métricas</span>
+    return_train_score<span class="token operator">=</span><span class="token boolean">False</span><span class="token punctuation">,</span>
+    n_jobs<span class="token operator">=</span><span class="token operator">-</span><span class="token number">1</span>                 <span class="token comment"># Paralelización</span>
+<span class="token punctuation">)</span>
+</code></pre><h4 id="métricas-calculadas">Métricas Calculadas </h4>
+<ul>
+<li><code>accuracy</code>: Exactitud general</li>
+<li><code>f1_macro</code>: F1 promedio de todas las clases</li>
+<li><code>precision_macro</code>: Precisión promedio</li>
+<li><code>recall_macro</code>: Recall promedio</li>
+</ul>
+<hr>
+<h3 id="función-4-fit_and_reportmodel_name-pipeline-param_grid-x-y-cv-scoring-needs_label_encoding">Función 4: <code>fit_and_report(model_name, pipeline, param_grid, X, y, cv, scoring, needs_label_encoding)</code> </h3>
+<h4 id="propósito-5">Propósito </h4>
+<p>Entrenar modelo con búsqueda de hiperparámetros y generar reportes.</p>
+<h4 id="proceso-detallado">Proceso Detallado </h4>
+<p><strong>1. Label Encoding (si necesario)</strong></p>
+<pre data-role="codeBlock" data-info="python" class="language-python python"><code><span class="token keyword keyword-if">if</span> needs_label_encoding<span class="token punctuation">:</span>
+    label_encoder <span class="token operator">=</span> LabelEncoder<span class="token punctuation">(</span><span class="token punctuation">)</span>
+    y_encoded <span class="token operator">=</span> label_encoder<span class="token punctuation">.</span>fit_transform<span class="token punctuation">(</span>y<span class="token punctuation">)</span>
+</code></pre><p><strong>2. Búsqueda de Hiperparámetros</strong></p>
+<pre data-role="codeBlock" data-info="python" class="language-python python"><code>search <span class="token operator">=</span> RandomizedSearchCV<span class="token punctuation">(</span>
+    pipeline<span class="token punctuation">,</span>
+    param_distributions<span class="token operator">=</span>param_grid<span class="token punctuation">,</span>
+    n_iter<span class="token operator">=</span><span class="token number">20</span><span class="token punctuation">,</span>              <span class="token comment"># 20 combinaciones aleatorias</span>
+    cv<span class="token operator">=</span>cv<span class="token punctuation">,</span>
+    scoring<span class="token operator">=</span><span class="token string">'f1_macro'</span><span class="token punctuation">,</span>     <span class="token comment"># Métrica de optimización</span>
+    n_jobs<span class="token operator">=</span><span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">,</span>
+    random_state<span class="token operator">=</span><span class="token number">42</span>
+<span class="token punctuation">)</span>
+search<span class="token punctuation">.</span>fit<span class="token punctuation">(</span>X<span class="token punctuation">,</span> y_encoded<span class="token punctuation">)</span>
+</code></pre><p><strong>3. Evaluación con Cross-Validation</strong></p>
+<pre data-role="codeBlock" data-info="python" class="language-python python"><code>cv_results <span class="token operator">=</span> evaluate_with_cv<span class="token punctuation">(</span>best_pipeline<span class="token punctuation">,</span> X<span class="token punctuation">,</span> y_encoded<span class="token punctuation">,</span> cv<span class="token punctuation">,</span> scoring<span class="token punctuation">)</span>
+</code></pre><p><strong>4. Generación de DataFrame de Resultados</strong></p>
+<pre data-role="codeBlock" data-info="python" class="language-python python"><code>cv_results_df <span class="token operator">=</span> pd<span class="token punctuation">.</span>DataFrame<span class="token punctuation">(</span><span class="token punctuation">{</span>
+    <span class="token string">'fold'</span><span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">,</span> <span class="token number">4</span><span class="token punctuation">,</span> <span class="token number">5</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+    <span class="token string">'accuracy'</span><span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+    <span class="token string">'f1_macro'</span><span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+    <span class="token string">'precision_macro'</span><span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+    <span class="token string">'recall_macro'</span><span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">]</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+</code></pre><p><strong>5. Guardar Resultados</strong></p>
+<pre data-role="codeBlock" data-info="python" class="language-python python"><code>cv_results_df<span class="token punctuation">.</span>to_csv<span class="token punctuation">(</span><span class="token string-interpolation"><span class="token string">f'cv_results_</span><span class="token interpolation"><span class="token punctuation">{</span>model_name<span class="token punctuation">}</span></span><span class="token string">.csv'</span></span><span class="token punctuation">,</span> index<span class="token operator">=</span><span class="token boolean">False</span><span class="token punctuation">)</span>
+</code></pre><h4 id="retorna-2">Retorna </h4>
+<pre data-role="codeBlock" data-info="python" class="language-python python"><code><span class="token punctuation">(</span>best_pipeline<span class="token punctuation">,</span> cv_results_df<span class="token punctuation">,</span> mean_f1<span class="token punctuation">,</span> label_encoder<span class="token punctuation">)</span>
+</code></pre><hr>
+<h3 id="función-5-create_labels_mappingy">Función 5: <code>create_labels_mapping(y)</code> </h3>
+<h4 id="propósito-6">Propósito </h4>
+<p>Crear tabla de mapeo de clases con soporte.</p>
+<h4 id="proceso-2">Proceso </h4>
+<pre data-role="codeBlock" data-info="python" class="language-python python"><code>labels_df <span class="token operator">=</span> pd<span class="token punctuation">.</span>DataFrame<span class="token punctuation">(</span><span class="token punctuation">{</span>
+    <span class="token string">'label_index'</span><span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+    <span class="token string">'label_name'</span><span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token string">'C'</span><span class="token punctuation">,</span> <span class="token string">'M1'</span><span class="token punctuation">,</span> <span class="token string">'M2'</span><span class="token punctuation">,</span> <span class="token string">'MM'</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+    <span class="token string">'support'</span><span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token number">44</span><span class="token punctuation">,</span> <span class="token number">39</span><span class="token punctuation">,</span> <span class="token number">31</span><span class="token punctuation">,</span> <span class="token number">18</span><span class="token punctuation">]</span>  <span class="token comment"># Conteo de muestras</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+labels_df<span class="token punctuation">.</span>to_csv<span class="token punctuation">(</span><span class="token string">'labels_mapping.csv'</span><span class="token punctuation">)</span>
+</code></pre><hr>
+<h3 id="función-6-generate_best_model_reportsbest_pipeline-model_name-x-y-cv-label_encoder">Función 6: <code>generate_best_model_reports(best_pipeline, model_name, X, y, cv, label_encoder)</code> </h3>
+<h4 id="propósito-7">Propósito </h4>
+<p>Generar reportes detallados del mejor modelo.</p>
+<h4 id="reportes-generados">Reportes Generados </h4>
+<p><strong>1. Confusion Matrix</strong></p>
+<pre data-role="codeBlock" data-info="python" class="language-python python"><code>y_pred <span class="token operator">=</span> cross_val_predict<span class="token punctuation">(</span>best_pipeline<span class="token punctuation">,</span> X<span class="token punctuation">,</span> y<span class="token punctuation">,</span> cv<span class="token operator">=</span>cv<span class="token punctuation">)</span>
+cm <span class="token operator">=</span> confusion_matrix<span class="token punctuation">(</span>y<span class="token punctuation">,</span> y_pred<span class="token punctuation">)</span>
+<span class="token comment"># Guardado en confusion_matrix.csv</span>
+</code></pre><p><strong>2. Classification Report</strong></p>
+<pre data-role="codeBlock" data-info="python" class="language-python python"><code>report <span class="token operator">=</span> classification_report<span class="token punctuation">(</span>y<span class="token punctuation">,</span> y_pred<span class="token punctuation">,</span> output_dict<span class="token operator">=</span><span class="token boolean">True</span><span class="token punctuation">)</span>
+<span class="token comment"># Guardado en classification_report.csv</span>
+</code></pre><p><strong>3. Feature Importances</strong> (si aplicable)</p>
+<pre data-role="codeBlock" data-info="python" class="language-python python"><code><span class="token keyword keyword-if">if</span> <span class="token builtin">hasattr</span><span class="token punctuation">(</span>classifier<span class="token punctuation">,</span> <span class="token string">'feature_importances_'</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+    importances_df <span class="token operator">=</span> pd<span class="token punctuation">.</span>DataFrame<span class="token punctuation">(</span><span class="token punctuation">{</span>
+        <span class="token string">'feature'</span><span class="token punctuation">:</span> feature_names<span class="token punctuation">,</span>
+        <span class="token string">'importance'</span><span class="token punctuation">:</span> classifier<span class="token punctuation">.</span>feature_importances_
+    <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">.</span>sort_values<span class="token punctuation">(</span><span class="token string">'importance'</span><span class="token punctuation">,</span> ascending<span class="token operator">=</span><span class="token boolean">False</span><span class="token punctuation">)</span>
+    <span class="token comment"># Guardado en feature_importances.csv</span>
+</code></pre><hr>
+<h2 id="️-sección-4-build-preprocessor">⚙️ Sección 4: Build Preprocessor </h2>
+<h3 id="propósito-8">Propósito </h3>
+<p>Construir el preprocesador y limpiar <code>X_train</code>.</p>
+<h3 id="proceso-3">Proceso </h3>
+<pre data-role="codeBlock" data-info="python" class="language-python python"><code>preprocessor<span class="token punctuation">,</span> X_train <span class="token operator">=</span> build_preprocessor<span class="token punctuation">(</span>X_train<span class="token punctuation">,</span> nan_threshold<span class="token operator">=</span><span class="token number">0.20</span><span class="token punctuation">)</span>
+</code></pre><h3 id="salida-esperada">Salida Esperada </h3>
+<pre data-role="codeBlock" data-info="" class="language-text"><code>  → Eliminando columna 'fecha' (no aporta información predictiva)
+  → Eliminando X columnas con &gt;20% NaN:
+      • columna1: 25.0% NaN
+      • columna2: 30.5% NaN
+  Features finales: 45 columnas
+    - Numéricas: 30
+    - Categóricas: 15
+✓ Features después de limpieza: 45 columnas
+</code></pre><hr>
+<h2 id="-sección-5-define-cross-validation-strategy">🎯 Sección 5: Define Cross-Validation Strategy </h2>
+<h3 id="propósito-9">Propósito </h3>
+<p>Configurar estrategia de validación cruzada y métricas.</p>
+<h3 id="configuración">Configuración </h3>
+<pre data-role="codeBlock" data-info="python" class="language-python python"><code>cv <span class="token operator">=</span> StratifiedKFold<span class="token punctuation">(</span>
+    n_splits<span class="token operator">=</span><span class="token number">5</span><span class="token punctuation">,</span>           <span class="token comment"># 5 folds</span>
+    shuffle<span class="token operator">=</span><span class="token boolean">True</span><span class="token punctuation">,</span>         <span class="token comment"># Mezclar datos</span>
+    random_state<span class="token operator">=</span><span class="token number">42</span>       <span class="token comment"># Reproducibilidad</span>
+<span class="token punctuation">)</span>
+
+scoring <span class="token operator">=</span> <span class="token punctuation">{</span>
+    <span class="token string">'accuracy'</span><span class="token punctuation">:</span> accuracy_score<span class="token punctuation">,</span>
+    <span class="token string">'f1_macro'</span><span class="token punctuation">:</span> f1_score <span class="token punctuation">(</span>average<span class="token operator">=</span><span class="token string">'macro'</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+    <span class="token string">'precision_macro'</span><span class="token punctuation">:</span> precision_score <span class="token punctuation">(</span>average<span class="token operator">=</span><span class="token string">'macro'</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+    <span class="token string">'recall_macro'</span><span class="token punctuation">:</span> recall_score <span class="token punctuation">(</span>average<span class="token operator">=</span><span class="token string">'macro'</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+</code></pre><h3 id="por-qué-stratifiedkfold">¿Por qué StratifiedKFold? </h3>
+<p>Mantiene la <strong>proporción de clases</strong> en cada fold:</p>
+<pre data-role="codeBlock" data-info="" class="language-text"><code>Fold 1: 20% C, 30% M1, 23% M2, 14% MM
+Fold 2: 20% C, 30% M1, 23% M2, 14% MM
+...
+</code></pre><hr>
+<h2 id="-sección-6-build-and-train-models">🚀 Sección 6: Build and Train Models </h2>
+<h3 id="celda-1-build-models">Celda 1: Build Models </h3>
+<pre data-role="codeBlock" data-info="python" class="language-python python"><code>models <span class="token operator">=</span> build_models<span class="token punctuation">(</span>preprocessor<span class="token punctuation">)</span>
+<span class="token comment"># Retorna: {'random_forest': (...), 'xgb': (...), 'nb': (...)}</span>
+</code></pre><h3 id="celda-2-train-all-models">Celda 2: Train All Models </h3>
+<pre data-role="codeBlock" data-info="python" class="language-python python"><code>results <span class="token operator">=</span> <span class="token punctuation">{</span><span class="token punctuation">}</span>
+<span class="token keyword keyword-for">for</span> model_name<span class="token punctuation">,</span> <span class="token punctuation">(</span>pipeline<span class="token punctuation">,</span> param_grid<span class="token punctuation">,</span> needs_encoding<span class="token punctuation">)</span> <span class="token keyword keyword-in">in</span> models<span class="token punctuation">.</span>items<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+    best_pipe<span class="token punctuation">,</span> cv_df<span class="token punctuation">,</span> mean_f1<span class="token punctuation">,</span> label_enc <span class="token operator">=</span> fit_and_report<span class="token punctuation">(</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">)</span>
+    results<span class="token punctuation">[</span>model_name<span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token punctuation">{</span>
+        <span class="token string">'pipeline'</span><span class="token punctuation">:</span> best_pipe<span class="token punctuation">,</span>
+        <span class="token string">'cv_results'</span><span class="token punctuation">:</span> cv_df<span class="token punctuation">,</span>
+        <span class="token string">'mean_f1_macro'</span><span class="token punctuation">:</span> mean_f1<span class="token punctuation">,</span>
+        <span class="token string">'label_encoder'</span><span class="token punctuation">:</span> label_enc
+    <span class="token punctuation">}</span>
+</code></pre><h3 id="proceso-por-modelo">Proceso por Modelo </h3>
+<ol>
+<li><strong>RandomizedSearchCV</strong> → Busca 20 combinaciones de hiperparámetros</li>
+<li><strong>Cross-validation</strong> → Evalúa mejor modelo en 5 folds</li>
+<li><strong>Guarda resultados</strong> → <code>cv_results_{model}.csv</code></li>
+</ol>
+<hr>
+<h2 id="-sección-7-compare-models-and-select-best">📊 Sección 7: Compare Models and Select Best </h2>
+<h3 id="propósito-10">Propósito </h3>
+<p>Comparar todos los modelos y seleccionar el mejor según F1-macro.</p>
+<h3 id="tabla-de-comparación">Tabla de Comparación </h3>
+<pre data-role="codeBlock" data-info="" class="language-text"><code>Model           Accuracy         F1-Macro         Precision        Recall
+random_forest   0.7200 ± 0.05   0.6800 ± 0.06   0.7000 ± 0.05   0.6950 ± 0.04
+xgb             0.7100 ± 0.06   0.6700 ± 0.07   0.6900 ± 0.06   0.6850 ± 0.05
+nb              0.6500 ± 0.08   0.6000 ± 0.09   0.6200 ± 0.08   0.6100 ± 0.07
+</code></pre><h3 id="selección-del-mejor">Selección del Mejor </h3>
+<pre data-role="codeBlock" data-info="python" class="language-python python"><code>best_model_name <span class="token operator">=</span> <span class="token builtin">max</span><span class="token punctuation">(</span>results<span class="token punctuation">.</span>items<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span> 
+                     key<span class="token operator">=</span><span class="token keyword keyword-lambda">lambda</span> x<span class="token punctuation">:</span> x<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token string">'mean_f1_macro'</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span>
+<span class="token comment"># Típicamente: 'random_forest'</span>
+</code></pre><hr>
+<h2 id="️-sección-8-generate-labels-mapping">🏷️ Sección 8: Generate Labels Mapping </h2>
+<h3 id="propósito-11">Propósito </h3>
+<p>Crear y guardar mapeo de etiquetas.</p>
+<h3 id="archivo-generado-labels_mappingcsv">Archivo Generado: <code>labels_mapping.csv</code> </h3>
+<pre data-role="codeBlock" data-info="csv" class="language-csv csv"><code><span class="token value">label_index</span><span class="token punctuation">,</span><span class="token value">label_name</span><span class="token punctuation">,</span><span class="token value">support</span>
+<span class="token value">0</span><span class="token punctuation">,</span><span class="token value">C</span><span class="token punctuation">,</span><span class="token value">44</span>
+<span class="token value">1</span><span class="token punctuation">,</span><span class="token value">M1</span><span class="token punctuation">,</span><span class="token value">39</span>
+<span class="token value">2</span><span class="token punctuation">,</span><span class="token value">M2</span><span class="token punctuation">,</span><span class="token value">31</span>
+<span class="token value">3</span><span class="token punctuation">,</span><span class="token value">MM</span><span class="token punctuation">,</span><span class="token value">18</span>
+</code></pre><hr>
+<h2 id="-sección-9-generate-reports-for-best-model">📄 Sección 9: Generate Reports for Best Model </h2>
+<h3 id="archivos-generados">Archivos Generados </h3>
+<p><strong>1. confusion_matrix.csv</strong></p>
+<pre data-role="codeBlock" data-info="" class="language-text"><code>     C   M1  M2  MM
+C    40   2   1   1
+M1    5  30   3   1
+M2    2   4  23   2
+MM    1   1   2  14
+</code></pre><p><strong>2. classification_report.csv</strong></p>
+<pre data-role="codeBlock" data-info="" class="language-text"><code>          precision  recall  f1-score  support
+C         0.83      0.91    0.87      44
+M1        0.81      0.77    0.79      39
+M2        0.79      0.74    0.77      31
+MM        0.78      0.78    0.78      18
+</code></pre><p><strong>3. feature_importances.csv</strong> (si Random Forest)</p>
+<pre data-role="codeBlock" data-info="" class="language-text"><code>feature                     importance
+num__edad                   0.0850
+num__refraccion_esferica    0.0720
+cat__sexo_M                 0.0650
+...
+</code></pre><hr>
+<h2 id="-sección-10-summary">✅ Sección 10: Summary </h2>
+<h3 id="archivos-generados-parte-1">Archivos Generados (Parte 1) </h3>
+<pre data-role="codeBlock" data-info="" class="language-text"><code>✓ labels_mapping.csv
+✓ cv_results_random_forest.csv
+✓ cv_results_xgb.csv
+✓ cv_results_nb.csv
+✓ confusion_matrix.csv
+✓ classification_report.csv
+✓ feature_importances.csv
+</code></pre><hr>
+<h1 id="clasificación-jerárquica-de-miopía---pipeline-completo-con-3-estrategias">Clasificación Jerárquica de Miopía - Pipeline Completo con 3 Estrategias </h1>
+<h2 id="-sección-11-comparación-de-estrategias">🎯 Sección 11: Comparación de Estrategias </h2>
+<h3 id="subsección-111-preparación-de-datos">Subsección 11.1: Preparación de Datos </h3>
+<h4 id="propósito-12">Propósito </h4>
+<p>Preparar datos completos con todas las columnas jerárquicas.</p>
+<h4 id="diccionario-de-datos">Diccionario de Datos </h4>
+<pre data-role="codeBlock" data-info="python" class="language-python python"><code>y_dict_full <span class="token operator">=</span> <span class="token punctuation">{</span>
+    <span class="token string">'M'</span><span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token string">'NO'</span><span class="token punctuation">,</span> <span class="token string">'SI'</span><span class="token punctuation">,</span> <span class="token string">'SI'</span><span class="token punctuation">,</span> <span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">]</span><span class="token punctuation">,</span>      <span class="token comment"># 132 valores</span>
+    <span class="token string">'MM'</span><span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token string">'NO'</span><span class="token punctuation">,</span> <span class="token string">'NO'</span><span class="token punctuation">,</span> <span class="token string">'SI'</span><span class="token punctuation">,</span> <span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">]</span><span class="token punctuation">,</span>      <span class="token comment"># 132 valores</span>
+    <span class="token string">'Combo'</span><span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token string">'C'</span><span class="token punctuation">,</span> <span class="token string">'M'</span><span class="token punctuation">,</span> <span class="token string">'MM'</span><span class="token punctuation">,</span> <span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">]</span><span class="token punctuation">,</span>     <span class="token comment"># 132 valores</span>
+    <span class="token string">'DCombo'</span><span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token string">'C'</span><span class="token punctuation">,</span> <span class="token string">'M1'</span><span class="token punctuation">,</span> <span class="token string">'M2'</span><span class="token punctuation">,</span> <span class="token string">'MM'</span><span class="token punctuation">]</span>   <span class="token comment"># 132 valores</span>
+<span class="token punctuation">}</span>
+</code></pre><h4 id="distribución-de-clases">Distribución de Clases </h4>
+<pre data-role="codeBlock" data-info="" class="language-text"><code>DCombo: C=44, M1=39, M2=31, MM=18
+Combo:  C=44, M=70, MM=18
+M:      NO=44, SI=88
+MM:     NO=122, SI=10
+</code></pre><hr>
+<h3 id="funciones-auxiliares">Funciones Auxiliares </h3>
+<h4 id="función-dcombo_to_hierarchicaldcombo_values">Función: <code>dcombo_to_hierarchical(dcombo_values)</code> </h4>
+<p><strong>Propósito</strong>: Mapear DCombo a las otras columnas jerárquicas.</p>
+<p><strong>Reglas de Mapeo</strong>:</p>
+<pre data-role="codeBlock" data-info="python" class="language-python python"><code>C  → M<span class="token operator">=</span>NO<span class="token punctuation">,</span>  MM<span class="token operator">=</span>NO<span class="token punctuation">,</span>  Combo<span class="token operator">=</span>C
+M1 → M<span class="token operator">=</span>SI<span class="token punctuation">,</span>  MM<span class="token operator">=</span>NO<span class="token punctuation">,</span>  Combo<span class="token operator">=</span>M
+M2 → M<span class="token operator">=</span>SI<span class="token punctuation">,</span>  MM<span class="token operator">=</span>NO<span class="token punctuation">,</span>  Combo<span class="token operator">=</span>M
+MM → M<span class="token operator">=</span>SI<span class="token punctuation">,</span>  MM<span class="token operator">=</span>SI<span class="token punctuation">,</span>  Combo<span class="token operator">=</span>MM
+</code></pre><p><strong>Implementación</strong>:</p>
+<pre data-role="codeBlock" data-info="python" class="language-python python"><code>M <span class="token operator">=</span> np<span class="token punctuation">.</span>where<span class="token punctuation">(</span>dcombo <span class="token operator">==</span> <span class="token string">'C'</span><span class="token punctuation">,</span> <span class="token string">'NO'</span><span class="token punctuation">,</span> <span class="token string">'SI'</span><span class="token punctuation">)</span>
+MM <span class="token operator">=</span> np<span class="token punctuation">.</span>where<span class="token punctuation">(</span>dcombo <span class="token operator">==</span> <span class="token string">'MM'</span><span class="token punctuation">,</span> <span class="token string">'SI'</span><span class="token punctuation">,</span> <span class="token string">'NO'</span><span class="token punctuation">)</span>
+Combo <span class="token operator">=</span> np<span class="token punctuation">.</span>where<span class="token punctuation">(</span>dcombo <span class="token operator">==</span> <span class="token string">'C'</span><span class="token punctuation">,</span> <span class="token string">'C'</span><span class="token punctuation">,</span>
+                np<span class="token punctuation">.</span>where<span class="token punctuation">(</span>dcombo <span class="token operator">==</span> <span class="token string">'MM'</span><span class="token punctuation">,</span> <span class="token string">'MM'</span><span class="token punctuation">,</span> <span class="token string">'M'</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+</code></pre><p><strong>Retorna</strong>: <code>(M, MM, Combo)</code></p>
+<hr>
+<h4 id="función-evaluate_hierarchical_predictionsy_true_dict-y_pred_dict-strategy_name">Función: <code>evaluate_hierarchical_predictions(y_true_dict, y_pred_dict, strategy_name)</code> </h4>
+<p><strong>Propósito</strong>: Evaluar predicciones en todas las columnas jerárquicas.</p>
+<p><strong>Proceso</strong>:</p>
+<pre data-role="codeBlock" data-info="python" class="language-python python"><code><span class="token keyword keyword-for">for</span> col <span class="token keyword keyword-in">in</span> <span class="token punctuation">[</span><span class="token string">'DCombo'</span><span class="token punctuation">,</span> <span class="token string">'Combo'</span><span class="token punctuation">,</span> <span class="token string">'M'</span><span class="token punctuation">,</span> <span class="token string">'MM'</span><span class="token punctuation">]</span><span class="token punctuation">:</span>
+    y_true <span class="token operator">=</span> y_true_dict<span class="token punctuation">[</span>col<span class="token punctuation">]</span>
+    y_pred <span class="token operator">=</span> y_pred_dict<span class="token punctuation">[</span>col<span class="token punctuation">]</span>
+    
+    acc <span class="token operator">=</span> accuracy_score<span class="token punctuation">(</span>y_true<span class="token punctuation">,</span> y_pred<span class="token punctuation">)</span>
+    f1_macro <span class="token operator">=</span> f1_score<span class="token punctuation">(</span>y_true<span class="token punctuation">,</span> y_pred<span class="token punctuation">,</span> average<span class="token operator">=</span><span class="token string">'macro'</span><span class="token punctuation">)</span>
+    
+    results<span class="token punctuation">[</span>col<span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token punctuation">{</span><span class="token string">'accuracy'</span><span class="token punctuation">:</span> acc<span class="token punctuation">,</span> <span class="token string">'f1_macro'</span><span class="token punctuation">:</span> f1_macro<span class="token punctuation">}</span>
+    
+    <span class="token comment"># Imprime classification_report completo</span>
+</code></pre><p><strong>Retorna</strong>:</p>
+<pre data-role="codeBlock" data-info="python" class="language-python python"><code><span class="token punctuation">{</span>
+    <span class="token string">'DCombo'</span><span class="token punctuation">:</span> <span class="token punctuation">{</span><span class="token string">'accuracy'</span><span class="token punctuation">:</span> <span class="token number">0.60</span><span class="token punctuation">,</span> <span class="token string">'f1_macro'</span><span class="token punctuation">:</span> <span class="token number">0.64</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token string">'Combo'</span><span class="token punctuation">:</span> <span class="token punctuation">{</span><span class="token string">'accuracy'</span><span class="token punctuation">:</span> <span class="token number">0.68</span><span class="token punctuation">,</span> <span class="token string">'f1_macro'</span><span class="token punctuation">:</span> <span class="token number">0.71</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token string">'M'</span><span class="token punctuation">:</span> <span class="token punctuation">{</span><span class="token string">'accuracy'</span><span class="token punctuation">:</span> <span class="token number">0.72</span><span class="token punctuation">,</span> <span class="token string">'f1_macro'</span><span class="token punctuation">:</span> <span class="token number">0.69</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token string">'MM'</span><span class="token punctuation">:</span> <span class="token punctuation">{</span><span class="token string">'accuracy'</span><span class="token punctuation">:</span> <span class="token number">0.90</span><span class="token punctuation">,</span> <span class="token string">'f1_macro'</span><span class="token punctuation">:</span> <span class="token number">0.73</span><span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre><hr>
+<h3 id="subsección-112-estrategia-1---top-down">Subsección 11.2: Estrategia 1 - TOP-DOWN </h3>
+<h4 id="concepto">Concepto </h4>
+<p><strong>"Predecir lo complejo primero, derivar lo simple"</strong></p>
+<h4 id="proceso-4">Proceso </h4>
+<p><strong>1. Predicción de DCombo</strong></p>
+<pre data-role="codeBlock" data-info="python" class="language-python python"><code>y_pred_dcombo <span class="token operator">=</span> cross_val_predict<span class="token punctuation">(</span>
+    best_pipeline<span class="token punctuation">,</span>      <span class="token comment"># Modelo entrenado en secciones 1-10</span>
+    X_train<span class="token punctuation">,</span>
+    y_train_dcombo<span class="token punctuation">,</span>
+    cv<span class="token operator">=</span>cv<span class="token punctuation">,</span>              <span class="token comment"># 5-fold stratified</span>
+    method<span class="token operator">=</span><span class="token string">'predict'</span>
+<span class="token punctuation">)</span>
+</code></pre><p><strong>⚠️ IMPORTANTE</strong>: Usa <code>cross_val_predict</code> → predicciones <strong>out-of-fold</strong> (sin overfitting)</p>
+<p><strong>2. Mapeo Jerárquico</strong></p>
+<pre data-role="codeBlock" data-info="python" class="language-python python"><code>M_pred<span class="token punctuation">,</span> MM_pred<span class="token punctuation">,</span> Combo_pred <span class="token operator">=</span> dcombo_to_hierarchical<span class="token punctuation">(</span>y_pred_dcombo<span class="token punctuation">)</span>
+</code></pre><p><strong>3. Resultado</strong></p>
+<pre data-role="codeBlock" data-info="python" class="language-python python"><code>y_pred_topdown <span class="token operator">=</span> <span class="token punctuation">{</span>
+    <span class="token string">'DCombo'</span><span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token string">'C'</span><span class="token punctuation">,</span> <span class="token string">'M1'</span><span class="token punctuation">,</span> <span class="token string">'M2'</span><span class="token punctuation">,</span> <span class="token string">'MM'</span><span class="token punctuation">,</span> <span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+    <span class="token string">'Combo'</span><span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token string">'C'</span><span class="token punctuation">,</span> <span class="token string">'M'</span><span class="token punctuation">,</span> <span class="token string">'M'</span><span class="token punctuation">,</span> <span class="token string">'MM'</span><span class="token punctuation">,</span> <span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+    <span class="token string">'M'</span><span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token string">'NO'</span><span class="token punctuation">,</span> <span class="token string">'SI'</span><span class="token punctuation">,</span> <span class="token string">'SI'</span><span class="token punctuation">,</span> <span class="token string">'SI'</span><span class="token punctuation">,</span> <span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+    <span class="token string">'MM'</span><span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token string">'NO'</span><span class="token punctuation">,</span> <span class="token string">'NO'</span><span class="token punctuation">,</span> <span class="token string">'NO'</span><span class="token punctuation">,</span> <span class="token string">'SI'</span><span class="token punctuation">,</span> <span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">]</span>
+<span class="token punctuation">}</span>
+</code></pre><h4 id="ventajas">Ventajas </h4>
+<p>✅ Simple (1 solo modelo)<br>
+✅ Coherencia jerárquica garantizada<br>
+✅ Rápido de entrenar e implementar</p>
+<h4 id="desventajas">Desventajas </h4>
+<p>❌ Problema de 4 clases (más difícil)<br>
+❌ No se especializa por nivel</p>
+<hr>
+<h3 id="subsección-1121-guardar-modelo-top-down">Subsección 11.2.1: Guardar Modelo Top-Down </h3>
+<h4 id="propósito-13">Propósito </h4>
+<p>Guardar el mejor modelo de la Parte 1 y su configuración para uso posterior.</p>
+<h4 id="archivos-guardados">Archivos Guardados </h4>
+<pre data-role="codeBlock" data-info="python" class="language-python python"><code><span class="token keyword keyword-import">import</span> joblib
+<span class="token keyword keyword-from">from</span> pathlib <span class="token keyword keyword-import">import</span> Path
+
+models_dir <span class="token operator">=</span> Path<span class="token punctuation">(</span><span class="token string">'models'</span><span class="token punctuation">)</span>
+
+<span class="token comment"># Guardar el mejor pipeline (DCombo directo)</span>
+joblib<span class="token punctuation">.</span>dump<span class="token punctuation">(</span>best_pipeline<span class="token punctuation">,</span> models_dir <span class="token operator">/</span> <span class="token string">'topdown_dcombo.pkl'</span><span class="token punctuation">)</span>
+
+<span class="token comment"># Guardar label encoder si existe</span>
+<span class="token keyword keyword-if">if</span> best_label_encoder <span class="token keyword keyword-is">is</span> <span class="token keyword keyword-not">not</span> <span class="token boolean">None</span><span class="token punctuation">:</span>
+    joblib<span class="token punctuation">.</span>dump<span class="token punctuation">(</span>best_label_encoder<span class="token punctuation">,</span> models_dir <span class="token operator">/</span> <span class="token string">'topdown_label_encoder.pkl'</span><span class="token punctuation">)</span>
+
+<span class="token comment"># Guardar información del modelo</span>
+topdown_info <span class="token operator">=</span> <span class="token punctuation">{</span>
+    <span class="token string">'model_name'</span><span class="token punctuation">:</span> best_model_name<span class="token punctuation">,</span>
+    <span class="token string">'best_f1_macro'</span><span class="token punctuation">:</span> best_f1<span class="token punctuation">,</span>
+    <span class="token string">'uses_label_encoding'</span><span class="token punctuation">:</span> best_label_encoder <span class="token keyword keyword-is">is</span> <span class="token keyword keyword-not">not</span> <span class="token boolean">None</span><span class="token punctuation">,</span>
+    <span class="token string">'classes'</span><span class="token punctuation">:</span> <span class="token builtin">sorted</span><span class="token punctuation">(</span>np<span class="token punctuation">.</span>unique<span class="token punctuation">(</span>y_train<span class="token punctuation">)</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+joblib<span class="token punctuation">.</span>dump<span class="token punctuation">(</span>topdown_info<span class="token punctuation">,</span> models_dir <span class="token operator">/</span> <span class="token string">'topdown_info.pkl'</span><span class="token punctuation">)</span>
+</code></pre><h4 id="cargar-modelo-posteriormente">Cargar Modelo Posteriormente </h4>
+<pre data-role="codeBlock" data-info="python" class="language-python python"><code><span class="token keyword keyword-import">import</span> joblib
+
+<span class="token comment"># Cargar modelo</span>
+model_topdown <span class="token operator">=</span> joblib<span class="token punctuation">.</span>load<span class="token punctuation">(</span><span class="token string">'models/topdown_dcombo.pkl'</span><span class="token punctuation">)</span>
+
+<span class="token comment"># Cargar info</span>
+topdown_info <span class="token operator">=</span> joblib<span class="token punctuation">.</span>load<span class="token punctuation">(</span><span class="token string">'models/topdown_info.pkl'</span><span class="token punctuation">)</span>
+<span class="token keyword keyword-print">print</span><span class="token punctuation">(</span><span class="token string-interpolation"><span class="token string">f"Modelo: </span><span class="token interpolation"><span class="token punctuation">{</span>topdown_info<span class="token punctuation">[</span><span class="token string">'model_name'</span><span class="token punctuation">]</span><span class="token punctuation">}</span></span><span class="token string">"</span></span><span class="token punctuation">)</span>
+<span class="token keyword keyword-print">print</span><span class="token punctuation">(</span><span class="token string-interpolation"><span class="token string">f"F1-Macro: </span><span class="token interpolation"><span class="token punctuation">{</span>topdown_info<span class="token punctuation">[</span><span class="token string">'best_f1_macro'</span><span class="token punctuation">]</span><span class="token punctuation">:</span><span class="token format-spec">.4f</span><span class="token punctuation">}</span></span><span class="token string">"</span></span><span class="token punctuation">)</span>
+
+<span class="token comment"># Cargar label encoder si existe</span>
+<span class="token keyword keyword-if">if</span> topdown_info<span class="token punctuation">[</span><span class="token string">'uses_label_encoding'</span><span class="token punctuation">]</span><span class="token punctuation">:</span>
+    label_encoder <span class="token operator">=</span> joblib<span class="token punctuation">.</span>load<span class="token punctuation">(</span><span class="token string">'models/topdown_label_encoder.pkl'</span><span class="token punctuation">)</span>
+</code></pre><hr>
+<h3 id="subsección-113-estrategia-2---bottom-up-optimizada-cascada-con-gridsearchcv">Subsección 11.3: Estrategia 2 - BOTTOM-UP OPTIMIZADA (Cascada con GridSearchCV) </h3>
+<h4 id="concepto-1">Concepto </h4>
+<p><strong>"Dividir y conquistar: decisiones simples en cascada con optimización independiente"</strong></p>
+<h4 id="optimización-con-gridsearchcv">Optimización con GridSearchCV </h4>
+<p>Cada nivel de la cascada optimiza sus hiperparámetros <strong>independientemente</strong> usando GridSearchCV, con especial enfoque en mejorar la clasificación M1 vs M2.</p>
+<h4 id="arquitectura-de-3-niveles">Arquitectura de 3 Niveles </h4>
+<pre data-role="codeBlock" data-info="" class="language-text"><code>┌─────────────────────────────────────────────┐
+│ NIVEL 1: Clasificador M (NO/SI)            │
+│ GridSearchCV → 160 combinaciones            │
+│ Best: n_estimators=150, max_depth=12       │
+│ F1-Macro: 0.7618                           │
+└──────────┬──────────────────────────────────┘
+           │
+           ├─ Si M=NO → DCombo='C'
+           │
+           └─ Si M=SI ↓
+              ┌───────────────────────────────────────┐
+              │ NIVEL 2: Clasificador MM (NO/SI)     │
+              │ GridSearchCV → 160 combinaciones      │
+              │ Best: n_estimators=100, max_depth=5  │
+              │ F1-Macro: 0.4699                     │
+              └──────────┬────────────────────────────┘
+                         │
+                         ├─ Si MM=SI → DCombo='MM'
+                         │
+                         └─ Si MM=NO ↓
+                            ┌─────────────────────────────────────────┐
+                            │ NIVEL 3: Clasificador M1 vs M2 ⚡      │
+                            │ GridSearchCV INTENSIVO → ~3360 combos  │
+                            │ Best: n_estimators=100, max_depth=5    │
+                            │       class_weight='balanced_subsample'│
+                            │       max_features=0.7                 │
+                            │ F1-Macro: 0.7601                       │
+                            └──────────┬──────────────────────────────┘
+                                       │
+                                       ├─ DCombo='M1'
+                                       └─ DCombo='M2'
+</code></pre><h4 id="proceso-detallado-1">Proceso Detallado </h4>
+<p><strong>NIVEL 1: Clasificador M (NO/SI) - Optimización con GridSearchCV</strong></p>
+<p><strong>Grid de Hiperparámetros</strong>:</p>
+<pre data-role="codeBlock" data-info="python" class="language-python python"><code>param_grid_m <span class="token operator">=</span> <span class="token punctuation">{</span>
+    <span class="token string">'classifier__n_estimators'</span><span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token number">100</span><span class="token punctuation">,</span> <span class="token number">150</span><span class="token punctuation">,</span> <span class="token number">200</span><span class="token punctuation">,</span> <span class="token number">300</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+    <span class="token string">'classifier__max_depth'</span><span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token number">8</span><span class="token punctuation">,</span> <span class="token number">10</span><span class="token punctuation">,</span> <span class="token number">12</span><span class="token punctuation">,</span> <span class="token number">15</span><span class="token punctuation">,</span> <span class="token boolean">None</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+    <span class="token string">'classifier__min_samples_split'</span><span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">5</span><span class="token punctuation">,</span> <span class="token number">10</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+    <span class="token string">'classifier__min_samples_leaf'</span><span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">4</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+    <span class="token string">'classifier__max_features'</span><span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token string">'sqrt'</span><span class="token punctuation">,</span> <span class="token string">'log2'</span><span class="token punctuation">]</span>
+<span class="token punctuation">}</span>
+<span class="token comment"># Total: 160 combinaciones</span>
+</code></pre><p><strong>Entrenamiento con GridSearchCV</strong>:</p>
+<pre data-role="codeBlock" data-info="python" class="language-python python"><code>preprocessor_m<span class="token punctuation">,</span> _ <span class="token operator">=</span> build_preprocessor<span class="token punctuation">(</span>X_train<span class="token punctuation">,</span> nan_threshold<span class="token operator">=</span><span class="token number">0.20</span><span class="token punctuation">)</span>
+pipeline_m <span class="token operator">=</span> Pipeline<span class="token punctuation">(</span><span class="token punctuation">[</span>
+    <span class="token punctuation">(</span><span class="token string">'preprocessor'</span><span class="token punctuation">,</span> preprocessor_m<span class="token punctuation">)</span><span class="token punctuation">,</span>
+    <span class="token punctuation">(</span><span class="token string">'classifier'</span><span class="token punctuation">,</span> RandomForestClassifier<span class="token punctuation">(</span>random_state<span class="token operator">=</span><span class="token number">42</span><span class="token punctuation">,</span> n_jobs<span class="token operator">=</span><span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+<span class="token punctuation">]</span><span class="token punctuation">)</span>
+
+grid_m <span class="token operator">=</span> GridSearchCV<span class="token punctuation">(</span>
+    pipeline_m<span class="token punctuation">,</span>
+    param_grid_m<span class="token punctuation">,</span>
+    cv<span class="token operator">=</span>cv<span class="token punctuation">,</span>              <span class="token comment"># 5-fold stratified</span>
+    scoring<span class="token operator">=</span><span class="token string">'f1_macro'</span><span class="token punctuation">,</span>
+    n_jobs<span class="token operator">=</span><span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">,</span>
+    verbose<span class="token operator">=</span><span class="token number">0</span>
+<span class="token punctuation">)</span>
+grid_m<span class="token punctuation">.</span>fit<span class="token punctuation">(</span>X_train<span class="token punctuation">,</span> y_m<span class="token punctuation">)</span>
+pipeline_m <span class="token operator">=</span> grid_m<span class="token punctuation">.</span>best_estimator_
+</code></pre><p><strong>Mejores Hiperparámetros</strong>:</p>
+<pre data-role="codeBlock" data-info="python" class="language-python python"><code>n_estimators<span class="token punctuation">:</span> <span class="token number">150</span>
+max_depth<span class="token punctuation">:</span> <span class="token number">12</span>
+min_samples_split<span class="token punctuation">:</span> <span class="token number">2</span>
+min_samples_leaf<span class="token punctuation">:</span> <span class="token number">1</span>
+max_features<span class="token punctuation">:</span> <span class="token string">'sqrt'</span>
+Best F1<span class="token operator">-</span>Macro<span class="token punctuation">:</span> <span class="token number">0.7618</span>
+</code></pre><p><strong>Predicción con CV</strong>:</p>
+<pre data-role="codeBlock" data-info="python" class="language-python python"><code>m_pred <span class="token operator">=</span> cross_val_predict<span class="token punctuation">(</span>pipeline_m<span class="token punctuation">,</span> X_train<span class="token punctuation">,</span> y_m<span class="token punctuation">,</span> cv<span class="token operator">=</span>cv<span class="token punctuation">)</span>
+<span class="token comment"># Resultado: ['NO', 'SI', 'SI', 'NO', ...]</span>
+</code></pre><hr>
+<p><strong>NIVEL 2: Clasificador MM (Solo casos M=SI) - Optimización con GridSearchCV</strong></p>
+<p><strong>Subset de Datos</strong>:</p>
+<pre data-role="codeBlock" data-info="python" class="language-python python"><code>mask_m_si <span class="token operator">=</span> <span class="token punctuation">(</span>y_m <span class="token operator">==</span> <span class="token string">'SI'</span><span class="token punctuation">)</span>
+X_m_si <span class="token operator">=</span> X_train<span class="token punctuation">.</span>loc<span class="token punctuation">[</span>mask_m_si<span class="token punctuation">]</span>      <span class="token comment"># 88 muestras</span>
+y_mm_si <span class="token operator">=</span> y_mm<span class="token punctuation">[</span>mask_m_si<span class="token punctuation">]</span>             <span class="token comment"># Solo labels de M=SI</span>
+</code></pre><p><strong>Grid de Hiperparámetros</strong>:</p>
+<pre data-role="codeBlock" data-info="python" class="language-python python"><code>param_grid_mm <span class="token operator">=</span> <span class="token punctuation">{</span>
+    <span class="token string">'classifier__n_estimators'</span><span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token number">100</span><span class="token punctuation">,</span> <span class="token number">150</span><span class="token punctuation">,</span> <span class="token number">200</span><span class="token punctuation">,</span> <span class="token number">300</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+    <span class="token string">'classifier__max_depth'</span><span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token number">5</span><span class="token punctuation">,</span> <span class="token number">8</span><span class="token punctuation">,</span> <span class="token number">10</span><span class="token punctuation">,</span> <span class="token number">12</span><span class="token punctuation">,</span> <span class="token boolean">None</span><span class="token punctuation">]</span><span class="token punctuation">,</span>  <span class="token comment"># Más profundidades</span>
+    <span class="token string">'classifier__min_samples_split'</span><span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">5</span><span class="token punctuation">,</span> <span class="token number">10</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+    <span class="token string">'classifier__min_samples_leaf'</span><span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">4</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+    <span class="token string">'classifier__max_features'</span><span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token string">'sqrt'</span><span class="token punctuation">,</span> <span class="token string">'log2'</span><span class="token punctuation">]</span>
+<span class="token punctuation">}</span>
+</code></pre><p><strong>Entrenamiento con GridSearchCV</strong>:</p>
+<pre data-role="codeBlock" data-info="python" class="language-python python"><code>preprocessor_mm<span class="token punctuation">,</span> _ <span class="token operator">=</span> build_preprocessor<span class="token punctuation">(</span>X_m_si<span class="token punctuation">,</span> nan_threshold<span class="token operator">=</span><span class="token number">0.20</span><span class="token punctuation">)</span>
+pipeline_mm <span class="token operator">=</span> Pipeline<span class="token punctuation">(</span><span class="token punctuation">[</span>
+    <span class="token punctuation">(</span><span class="token string">'preprocessor'</span><span class="token punctuation">,</span> preprocessor_mm<span class="token punctuation">)</span><span class="token punctuation">,</span>
+    <span class="token punctuation">(</span><span class="token string">'classifier'</span><span class="token punctuation">,</span> RandomForestClassifier<span class="token punctuation">(</span>random_state<span class="token operator">=</span><span class="token number">42</span><span class="token punctuation">,</span> n_jobs<span class="token operator">=</span><span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+<span class="token punctuation">]</span><span class="token punctuation">)</span>
+
+grid_mm <span class="token operator">=</span> GridSearchCV<span class="token punctuation">(</span>
+    pipeline_mm<span class="token punctuation">,</span>
+    param_grid_mm<span class="token punctuation">,</span>
+    cv<span class="token operator">=</span>cv<span class="token punctuation">,</span>
+    scoring<span class="token operator">=</span><span class="token string">'f1_macro'</span><span class="token punctuation">,</span>
+    n_jobs<span class="token operator">=</span><span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">,</span>
+    verbose<span class="token operator">=</span><span class="token number">0</span>
+<span class="token punctuation">)</span>
+grid_mm<span class="token punctuation">.</span>fit<span class="token punctuation">(</span>X_m_si<span class="token punctuation">,</span> y_mm_si<span class="token punctuation">)</span>
+pipeline_mm <span class="token operator">=</span> grid_mm<span class="token punctuation">.</span>best_estimator_
+</code></pre><p><strong>Mejores Hiperparámetros</strong>:</p>
+<pre data-role="codeBlock" data-info="python" class="language-python python"><code>n_estimators<span class="token punctuation">:</span> <span class="token number">100</span>
+max_depth<span class="token punctuation">:</span> <span class="token number">5</span>
+min_samples_split<span class="token punctuation">:</span> <span class="token number">10</span>
+min_samples_leaf<span class="token punctuation">:</span> <span class="token number">2</span>
+max_features<span class="token punctuation">:</span> <span class="token string">'sqrt'</span>
+Best F1<span class="token operator">-</span>Macro<span class="token punctuation">:</span> <span class="token number">0.4699</span>
+</code></pre><p><strong>Predicción con CV</strong>:</p>
+<pre data-role="codeBlock" data-info="python" class="language-python python"><code>mask_m_si_pred <span class="token operator">=</span> <span class="token punctuation">(</span>m_pred <span class="token operator">==</span> <span class="token string">'SI'</span><span class="token punctuation">)</span>
+X_m_si_pred <span class="token operator">=</span> X_train<span class="token punctuation">.</span>loc<span class="token punctuation">[</span>mask_m_si_pred<span class="token punctuation">]</span>
+y_mm_si_pred <span class="token operator">=</span> y_mm<span class="token punctuation">[</span>mask_m_si_pred<span class="token punctuation">]</span>
+
+mm_pred_subset <span class="token operator">=</span> cross_val_predict<span class="token punctuation">(</span>pipeline_mm<span class="token punctuation">,</span> X_m_si_pred<span class="token punctuation">,</span> y_mm_si_pred<span class="token punctuation">,</span> cv<span class="token operator">=</span>cv<span class="token punctuation">)</span>
+mm_pred<span class="token punctuation">[</span>mask_m_si_pred<span class="token punctuation">]</span> <span class="token operator">=</span> mm_pred_subset
+</code></pre><hr>
+<p><strong>NIVEL 3: Clasificador M1 vs M2 ⚡ - OPTIMIZACIÓN INTENSIVA</strong></p>
+<p><strong>¿Por qué optimización intensiva?</strong><br>
+Este es el nivel más crítico donde el modelo original tenía peor desempeño. Se implementa una búsqueda exhaustiva con:</p>
+<ul>
+<li>Más opciones de hiperparámetros</li>
+<li>Incluye <code>class_weight</code> para balancear clases</li>
+<li>Fracciones de features además de 'sqrt' y 'log2'</li>
+</ul>
+<p><strong>Subset de Datos</strong>:</p>
+<pre data-role="codeBlock" data-info="python" class="language-python python"><code>mask_m1m2 <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token punctuation">(</span>y_dcombo <span class="token operator">==</span> <span class="token string">'M1'</span><span class="token punctuation">)</span> <span class="token operator">|</span> <span class="token punctuation">(</span>y_dcombo <span class="token operator">==</span> <span class="token string">'M2'</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+X_m1m2 <span class="token operator">=</span> X_train<span class="token punctuation">.</span>loc<span class="token punctuation">[</span>mask_m1m2<span class="token punctuation">]</span>      <span class="token comment"># 70 muestras</span>
+y_dcombo_m1m2 <span class="token operator">=</span> y_dcombo<span class="token punctuation">[</span>mask_m1m2<span class="token punctuation">]</span>   <span class="token comment"># ['M1', 'M2', ...]</span>
+<span class="token comment"># M1: 39 muestras, M2: 31 muestras</span>
+</code></pre><p><strong>Grid EXTENDIDO de Hiperparámetros</strong>:</p>
+<pre data-role="codeBlock" data-info="python" class="language-python python"><code>param_grid_m1m2 <span class="token operator">=</span> <span class="token punctuation">{</span>
+    <span class="token string">'classifier__n_estimators'</span><span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token number">100</span><span class="token punctuation">,</span> <span class="token number">150</span><span class="token punctuation">,</span> <span class="token number">200</span><span class="token punctuation">,</span> <span class="token number">300</span><span class="token punctuation">,</span> <span class="token number">500</span><span class="token punctuation">]</span><span class="token punctuation">,</span>  <span class="token comment"># ← +500</span>
+    <span class="token string">'classifier__max_depth'</span><span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token number">5</span><span class="token punctuation">,</span> <span class="token number">8</span><span class="token punctuation">,</span> <span class="token number">10</span><span class="token punctuation">,</span> <span class="token number">12</span><span class="token punctuation">,</span> <span class="token number">15</span><span class="token punctuation">,</span> <span class="token number">20</span><span class="token punctuation">,</span> <span class="token boolean">None</span><span class="token punctuation">]</span><span class="token punctuation">,</span>  <span class="token comment"># ← +15, 20</span>
+    <span class="token string">'classifier__min_samples_split'</span><span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">5</span><span class="token punctuation">,</span> <span class="token number">10</span><span class="token punctuation">,</span> <span class="token number">15</span><span class="token punctuation">]</span><span class="token punctuation">,</span>        <span class="token comment"># ← +15</span>
+    <span class="token string">'classifier__min_samples_leaf'</span><span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">4</span><span class="token punctuation">,</span> <span class="token number">8</span><span class="token punctuation">]</span><span class="token punctuation">,</span>           <span class="token comment"># ← +8</span>
+    <span class="token string">'classifier__max_features'</span><span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token string">'sqrt'</span><span class="token punctuation">,</span> <span class="token string">'log2'</span><span class="token punctuation">,</span> <span class="token number">0.5</span><span class="token punctuation">,</span> <span class="token number">0.7</span><span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token comment"># ← Fracciones</span>
+    <span class="token string">'classifier__class_weight'</span><span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token boolean">None</span><span class="token punctuation">,</span> <span class="token string">'balanced'</span><span class="token punctuation">,</span> <span class="token string">'balanced_subsample'</span><span class="token punctuation">]</span>  <span class="token comment"># ← ¡NUEVO!</span>
+<span class="token punctuation">}</span>
+<span class="token comment"># Total: ~3,360 combinaciones</span>
+</code></pre><p><strong>Entrenamiento con GridSearchCV</strong>:</p>
+<pre data-role="codeBlock" data-info="python" class="language-python python"><code>preprocessor_m1m2<span class="token punctuation">,</span> _ <span class="token operator">=</span> build_preprocessor<span class="token punctuation">(</span>X_m1m2<span class="token punctuation">,</span> nan_threshold<span class="token operator">=</span><span class="token number">0.20</span><span class="token punctuation">)</span>
+pipeline_m1m2 <span class="token operator">=</span> Pipeline<span class="token punctuation">(</span><span class="token punctuation">[</span>
+    <span class="token punctuation">(</span><span class="token string">'preprocessor'</span><span class="token punctuation">,</span> preprocessor_m1m2<span class="token punctuation">)</span><span class="token punctuation">,</span>
+    <span class="token punctuation">(</span><span class="token string">'classifier'</span><span class="token punctuation">,</span> RandomForestClassifier<span class="token punctuation">(</span>random_state<span class="token operator">=</span><span class="token number">42</span><span class="token punctuation">,</span> n_jobs<span class="token operator">=</span><span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+<span class="token punctuation">]</span><span class="token punctuation">)</span>
+
+grid_m1m2 <span class="token operator">=</span> GridSearchCV<span class="token punctuation">(</span>
+    pipeline_m1m2<span class="token punctuation">,</span>
+    param_grid_m1m2<span class="token punctuation">,</span>
+    cv<span class="token operator">=</span>cv<span class="token punctuation">,</span>
+    scoring<span class="token operator">=</span><span class="token string">'f1_macro'</span><span class="token punctuation">,</span>
+    n_jobs<span class="token operator">=</span><span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">,</span>
+    verbose<span class="token operator">=</span><span class="token number">1</span>  <span class="token comment"># ← Mostrar progreso</span>
+<span class="token punctuation">)</span>
+grid_m1m2<span class="token punctuation">.</span>fit<span class="token punctuation">(</span>X_m1m2<span class="token punctuation">,</span> y_dcombo_m1m2<span class="token punctuation">)</span>
+pipeline_m1m2 <span class="token operator">=</span> grid_m1m2<span class="token punctuation">.</span>best_estimator_
+</code></pre><p><strong>Mejores Hiperparámetros</strong>:</p>
+<pre data-role="codeBlock" data-info="python" class="language-python python"><code>n_estimators<span class="token punctuation">:</span> <span class="token number">100</span>
+max_depth<span class="token punctuation">:</span> <span class="token number">5</span>
+min_samples_split<span class="token punctuation">:</span> <span class="token number">5</span>
+min_samples_leaf<span class="token punctuation">:</span> <span class="token number">2</span>
+max_features<span class="token punctuation">:</span> <span class="token number">0.7</span>  <span class="token comment"># ← 70% de features</span>
+class_weight<span class="token punctuation">:</span> <span class="token string">'balanced_subsample'</span>  <span class="token comment"># ← Balance de clases</span>
+Best F1<span class="token operator">-</span>Macro<span class="token punctuation">:</span> <span class="token number">0.7601</span>
+</code></pre><p><strong>Predicción con CV</strong>:</p>
+<pre data-role="codeBlock" data-info="python" class="language-python python"><code>mask_m1m2_pred <span class="token operator">=</span> mask_m_si_pred <span class="token operator">&amp;</span> <span class="token punctuation">(</span>mm_pred <span class="token operator">==</span> <span class="token string">'NO'</span><span class="token punctuation">)</span>
+X_m1m2_pred <span class="token operator">=</span> X_train<span class="token punctuation">.</span>loc<span class="token punctuation">[</span>mask_m1m2_pred<span class="token punctuation">]</span>
+y_m1m2_pred <span class="token operator">=</span> y_dcombo<span class="token punctuation">[</span>mask_m1m2_pred<span class="token punctuation">]</span>
+
+m1m2_pred_subset <span class="token operator">=</span> cross_val_predict<span class="token punctuation">(</span>pipeline_m1m2<span class="token punctuation">,</span> X_m1m2_pred<span class="token punctuation">,</span> y_m1m2_pred<span class="token punctuation">,</span> cv<span class="token operator">=</span>cv<span class="token punctuation">)</span>
+dcombo_pred<span class="token punctuation">[</span>mask_m1m2_pred<span class="token punctuation">]</span> <span class="token operator">=</span> m1m2_pred_subset
+</code></pre><hr>
+<p><strong>Construcción de DCombo Final</strong>:</p>
+<pre data-role="codeBlock" data-info="python" class="language-python python"><code><span class="token comment"># Inicializar con 'C' (todos)</span>
+dcombo_pred <span class="token operator">=</span> np<span class="token punctuation">.</span>array<span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token string">'C'</span><span class="token punctuation">]</span> <span class="token operator">*</span> n_samples<span class="token punctuation">,</span> dtype<span class="token operator">=</span><span class="token builtin">object</span><span class="token punctuation">)</span>
+
+<span class="token comment"># Casos M=SI y MM=SI → 'MM'</span>
+mask_mm_si <span class="token operator">=</span> mask_m_si_pred <span class="token operator">&amp;</span> <span class="token punctuation">(</span>mm_pred <span class="token operator">==</span> <span class="token string">'SI'</span><span class="token punctuation">)</span>
+dcombo_pred<span class="token punctuation">[</span>mask_mm_si<span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token string">'MM'</span>
+
+<span class="token comment"># Casos M=SI y MM=NO → 'M1' o 'M2' (ya asignado arriba)</span>
+<span class="token comment"># Los casos M=NO quedan como 'C'</span>
+</code></pre><p><strong>Derivar Combo</strong>:</p>
+<pre data-role="codeBlock" data-info="python" class="language-python python"><code>combo_pred <span class="token operator">=</span> np<span class="token punctuation">.</span>where<span class="token punctuation">(</span>dcombo_pred <span class="token operator">==</span> <span class="token string">'C'</span><span class="token punctuation">,</span> <span class="token string">'C'</span><span class="token punctuation">,</span>
+                     np<span class="token punctuation">.</span>where<span class="token punctuation">(</span>dcombo_pred <span class="token operator">==</span> <span class="token string">'MM'</span><span class="token punctuation">,</span> <span class="token string">'MM'</span><span class="token punctuation">,</span> <span class="token string">'M'</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+</code></pre><h4 id="ventajas-1">Ventajas </h4>
+<p>✅ Especialización por nivel<br>
+✅ Divide problemas complejos<br>
+✅ Mejor para datos desbalanceados<br>
+✅ Cada modelo se enfoca en una decisión<br>
+✅ <strong>GridSearchCV optimiza cada nivel independientemente</strong><br>
+✅ <strong>Balance de clases en nivel M1/M2</strong></p>
+<h4 id="desventajas-1">Desventajas </h4>
+<p>❌ 3 modelos que entrenar y mantener<br>
+❌ Errores se acumulan en cascada<br>
+❌ Mayor complejidad de implementación<br>
+❌ <strong>Búsqueda de hiperparámetros tarda varios minutos</strong></p>
+<hr>
+<h3 id="subsección-1131-guardar-modelos-bottom-up">Subsección 11.3.1: Guardar Modelos Bottom-Up </h3>
+<h4 id="propósito-14">Propósito </h4>
+<p>Guardar los 3 modelos entrenados y sus hiperparámetros para uso posterior.</p>
+<h4 id="archivos-guardados-1">Archivos Guardados </h4>
+<pre data-role="codeBlock" data-info="python" class="language-python python"><code><span class="token keyword keyword-import">import</span> joblib
+<span class="token keyword keyword-from">from</span> pathlib <span class="token keyword keyword-import">import</span> Path
+
+models_dir <span class="token operator">=</span> Path<span class="token punctuation">(</span><span class="token string">'models'</span><span class="token punctuation">)</span>
+models_dir<span class="token punctuation">.</span>mkdir<span class="token punctuation">(</span>exist_ok<span class="token operator">=</span><span class="token boolean">True</span><span class="token punctuation">)</span>
+
+<span class="token comment"># Guardar modelos</span>
+joblib<span class="token punctuation">.</span>dump<span class="token punctuation">(</span>pipeline_m<span class="token punctuation">,</span> models_dir <span class="token operator">/</span> <span class="token string">'bottomup_level1_M.pkl'</span><span class="token punctuation">)</span>
+joblib<span class="token punctuation">.</span>dump<span class="token punctuation">(</span>pipeline_mm<span class="token punctuation">,</span> models_dir <span class="token operator">/</span> <span class="token string">'bottomup_level2_MM.pkl'</span><span class="token punctuation">)</span>
+joblib<span class="token punctuation">.</span>dump<span class="token punctuation">(</span>pipeline_m1m2<span class="token punctuation">,</span> models_dir <span class="token operator">/</span> <span class="token string">'bottomup_level3_M1M2.pkl'</span><span class="token punctuation">)</span>
+
+<span class="token comment"># Guardar hiperparámetros</span>
+hyperparams <span class="token operator">=</span> <span class="token punctuation">{</span>
+    <span class="token string">'level1_M'</span><span class="token punctuation">:</span> grid_m<span class="token punctuation">.</span>best_params_<span class="token punctuation">,</span>
+    <span class="token string">'level2_MM'</span><span class="token punctuation">:</span> grid_mm<span class="token punctuation">.</span>best_params_<span class="token punctuation">,</span>
+    <span class="token string">'level3_M1M2'</span><span class="token punctuation">:</span> grid_m1m2<span class="token punctuation">.</span>best_params_
+<span class="token punctuation">}</span>
+joblib<span class="token punctuation">.</span>dump<span class="token punctuation">(</span>hyperparams<span class="token punctuation">,</span> models_dir <span class="token operator">/</span> <span class="token string">'bottomup_best_params.pkl'</span><span class="token punctuation">)</span>
+
+<span class="token comment"># Guardar scores de validación</span>
+scores_bottomup <span class="token operator">=</span> <span class="token punctuation">{</span>
+    <span class="token string">'level1_M_f1_macro'</span><span class="token punctuation">:</span> grid_m<span class="token punctuation">.</span>best_score_<span class="token punctuation">,</span>
+    <span class="token string">'level2_MM_f1_macro'</span><span class="token punctuation">:</span> grid_mm<span class="token punctuation">.</span>best_score_<span class="token punctuation">,</span>
+    <span class="token string">'level3_M1M2_f1_macro'</span><span class="token punctuation">:</span> grid_m1m2<span class="token punctuation">.</span>best_score_
+<span class="token punctuation">}</span>
+joblib<span class="token punctuation">.</span>dump<span class="token punctuation">(</span>scores_bottomup<span class="token punctuation">,</span> models_dir <span class="token operator">/</span> <span class="token string">'bottomup_validation_scores.pkl'</span><span class="token punctuation">)</span>
+</code></pre><h4 id="cargar-modelos-posteriormente">Cargar Modelos Posteriormente </h4>
+<pre data-role="codeBlock" data-info="python" class="language-python python"><code><span class="token keyword keyword-import">import</span> joblib
+
+<span class="token comment"># Cargar modelos</span>
+model_m <span class="token operator">=</span> joblib<span class="token punctuation">.</span>load<span class="token punctuation">(</span><span class="token string">'models/bottomup_level1_M.pkl'</span><span class="token punctuation">)</span>
+model_mm <span class="token operator">=</span> joblib<span class="token punctuation">.</span>load<span class="token punctuation">(</span><span class="token string">'models/bottomup_level2_MM.pkl'</span><span class="token punctuation">)</span>
+model_m1m2 <span class="token operator">=</span> joblib<span class="token punctuation">.</span>load<span class="token punctuation">(</span><span class="token string">'models/bottomup_level3_M1M2.pkl'</span><span class="token punctuation">)</span>
+
+<span class="token comment"># Cargar hiperparámetros</span>
+hyperparams <span class="token operator">=</span> joblib<span class="token punctuation">.</span>load<span class="token punctuation">(</span><span class="token string">'models/bottomup_best_params.pkl'</span><span class="token punctuation">)</span>
+<span class="token keyword keyword-print">print</span><span class="token punctuation">(</span><span class="token string-interpolation"><span class="token string">f"Nivel 1 (M): </span><span class="token interpolation"><span class="token punctuation">{</span>hyperparams<span class="token punctuation">[</span><span class="token string">'level1_M'</span><span class="token punctuation">]</span><span class="token punctuation">}</span></span><span class="token string">"</span></span><span class="token punctuation">)</span>
+
+<span class="token comment"># Cargar scores</span>
+scores <span class="token operator">=</span> joblib<span class="token punctuation">.</span>load<span class="token punctuation">(</span><span class="token string">'models/bottomup_validation_scores.pkl'</span><span class="token punctuation">)</span>
+<span class="token keyword keyword-print">print</span><span class="token punctuation">(</span><span class="token string-interpolation"><span class="token string">f"F1-Macro Nivel 3: </span><span class="token interpolation"><span class="token punctuation">{</span>scores<span class="token punctuation">[</span><span class="token string">'level3_M1M2_f1_macro'</span><span class="token punctuation">]</span><span class="token punctuation">:</span><span class="token format-spec">.4f</span><span class="token punctuation">}</span></span><span class="token string">"</span></span><span class="token punctuation">)</span>
+</code></pre><hr>
+<h3 id="subsección-114-estrategia-3---hybrid-híbrido">Subsección 11.4: Estrategia 3 - HYBRID (Híbrido) </h3>
+<h4 id="concepto-2">Concepto </h4>
+<p><strong>"Confía en lo simple, valida con lo especializado"</strong></p>
+<h4 id="arquitectura">Arquitectura </h4>
+<pre data-role="codeBlock" data-info="" class="language-text"><code>┌──────────────────────┐
+│  Top-Down (Base)     │  ← Predicción principal
+│  Confianza: 0.0-1.0  │
+└──────────┬───────────┘
+           │
+           ↓ Comparar con
+┌──────────────────────┐
+│  Bottom-Up (Validador)│  ← Validación especializada
+└──────────┬───────────┘
+           │
+           ↓
+  ¿Hay conflicto? → SI
+  ¿Confianza &lt; 0.70? → SI
+           │
+           ↓
+   Usar Bottom-Up para este caso
+</code></pre><h4 id="proceso-detallado-2">Proceso Detallado </h4>
+<p><strong>1. Calcular Confianza de Top-Down</strong></p>
+<pre data-role="codeBlock" data-info="python" class="language-python python"><code>proba_topdown <span class="token operator">=</span> best_pipeline<span class="token punctuation">.</span>predict_proba<span class="token punctuation">(</span>X_train<span class="token punctuation">)</span>
+<span class="token comment"># Ejemplo: [[0.65, 0.15, 0.10, 0.10],  # Clase C con 65%</span>
+<span class="token comment">#           [0.05, 0.80, 0.10, 0.05]]  # Clase M1 con 80%</span>
+
+confidence_topdown <span class="token operator">=</span> proba_topdown<span class="token punctuation">.</span><span class="token builtin">max</span><span class="token punctuation">(</span>axis<span class="token operator">=</span><span class="token number">1</span><span class="token punctuation">)</span>
+<span class="token comment"># [0.65, 0.80, ...]</span>
+</code></pre><p><strong>2. Inicializar con Top-Down</strong></p>
+<pre data-role="codeBlock" data-info="python" class="language-python python"><code>y_pred_hybrid <span class="token operator">=</span> <span class="token punctuation">{</span>
+    <span class="token string">'DCombo'</span><span class="token punctuation">:</span> y_pred_topdown<span class="token punctuation">[</span><span class="token string">'DCombo'</span><span class="token punctuation">]</span><span class="token punctuation">.</span>copy<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+    <span class="token string">'Combo'</span><span class="token punctuation">:</span> y_pred_topdown<span class="token punctuation">[</span><span class="token string">'Combo'</span><span class="token punctuation">]</span><span class="token punctuation">.</span>copy<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+    <span class="token string">'M'</span><span class="token punctuation">:</span> y_pred_topdown<span class="token punctuation">[</span><span class="token string">'M'</span><span class="token punctuation">]</span><span class="token punctuation">.</span>copy<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+    <span class="token string">'MM'</span><span class="token punctuation">:</span> y_pred_topdown<span class="token punctuation">[</span><span class="token string">'MM'</span><span class="token punctuation">]</span><span class="token punctuation">.</span>copy<span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+</code></pre><p><strong>3. Validación Cruzada</strong></p>
+<pre data-role="codeBlock" data-info="python" class="language-python python"><code>CONFIDENCE_THRESHOLD <span class="token operator">=</span> <span class="token number">0.70</span>
+conflicts_resolved <span class="token operator">=</span> <span class="token number">0</span>
+
+<span class="token keyword keyword-for">for</span> i <span class="token keyword keyword-in">in</span> <span class="token builtin">range</span><span class="token punctuation">(</span>n_samples<span class="token punctuation">)</span><span class="token punctuation">:</span>
+    <span class="token comment"># Detectar conflictos</span>
+    conflict_m <span class="token operator">=</span> <span class="token punctuation">(</span>y_pred_topdown<span class="token punctuation">[</span><span class="token string">'M'</span><span class="token punctuation">]</span><span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">!=</span> y_pred_bottomup<span class="token punctuation">[</span><span class="token string">'M'</span><span class="token punctuation">]</span><span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">)</span>
+    conflict_mm <span class="token operator">=</span> <span class="token punctuation">(</span>y_pred_topdown<span class="token punctuation">[</span><span class="token string">'MM'</span><span class="token punctuation">]</span><span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">!=</span> y_pred_bottomup<span class="token punctuation">[</span><span class="token string">'MM'</span><span class="token punctuation">]</span><span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">)</span>
+    
+    <span class="token comment"># Resolver si hay conflicto Y baja confianza</span>
+    <span class="token keyword keyword-if">if</span> <span class="token punctuation">(</span>conflict_m <span class="token keyword keyword-or">or</span> conflict_mm<span class="token punctuation">)</span> <span class="token keyword keyword-and">and</span> confidence_topdown<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">&lt;</span> CONFIDENCE_THRESHOLD<span class="token punctuation">:</span>
+        conflicts_resolved <span class="token operator">+=</span> <span class="token number">1</span>
+        <span class="token comment"># Usar Bottom-Up para este caso</span>
+        y_pred_hybrid<span class="token punctuation">[</span><span class="token string">'M'</span><span class="token punctuation">]</span><span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">=</span> y_pred_bottomup<span class="token punctuation">[</span><span class="token string">'M'</span><span class="token punctuation">]</span><span class="token punctuation">[</span>i<span class="token punctuation">]</span>
+        y_pred_hybrid<span class="token punctuation">[</span><span class="token string">'MM'</span><span class="token punctuation">]</span><span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">=</span> y_pred_bottomup<span class="token punctuation">[</span><span class="token string">'MM'</span><span class="token punctuation">]</span><span class="token punctuation">[</span>i<span class="token punctuation">]</span>
+        y_pred_hybrid<span class="token punctuation">[</span><span class="token string">'DCombo'</span><span class="token punctuation">]</span><span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">=</span> y_pred_bottomup<span class="token punctuation">[</span><span class="token string">'DCombo'</span><span class="token punctuation">]</span><span class="token punctuation">[</span>i<span class="token punctuation">]</span>
+        y_pred_hybrid<span class="token punctuation">[</span><span class="token string">'Combo'</span><span class="token punctuation">]</span><span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">=</span> y_pred_bottomup<span class="token punctuation">[</span><span class="token string">'Combo'</span><span class="token punctuation">]</span><span class="token punctuation">[</span>i<span class="token punctuation">]</span>
+</code></pre><p><strong>Ejemplo de Conflicto Resuelto</strong>:</p>
+<pre data-role="codeBlock" data-info="" class="language-text"><code>Muestra #42:
+  Top-Down:    M=SI,  MM=NO,  DCombo=M1  (Confianza: 0.58)
+  Bottom-Up:   M=SI,  MM=SI,  DCombo=MM
+  Conflicto:   MM diferente (NO vs SI)
+  Confianza:   0.58 &lt; 0.70
+  Acción:      Usar Bottom-Up → DCombo=MM
+</code></pre><h4 id="parámetros-clave">Parámetros Clave </h4>
+<ul>
+<li><code>CONFIDENCE_THRESHOLD = 0.70</code> (70%)</li>
+<li>Casos con confianza ≥70% → Mantener Top-Down</li>
+<li>Casos con confianza &lt;70% + conflicto → Usar Bottom-Up</li>
+</ul>
+<h4 id="ventajas-2">Ventajas </h4>
+<p>✅ Combina lo mejor de ambos<br>
+✅ Más robusto ante incertidumbre<br>
+✅ Validación cruzada automática<br>
+✅ Adaptativo según confianza</p>
+<h4 id="desventajas-2">Desventajas </h4>
+<p>❌ Mayor complejidad computacional<br>
+❌ Requiere ambos modelos entrenados<br>
+❌ Umbral de confianza es un hiperparámetro</p>
+<hr>
+<h3 id="subsección-115-comparación-final">Subsección 11.5: Comparación Final </h3>
+<h4 id="tabla-comparativa---accuracy">Tabla Comparativa - Accuracy </h4>
+<pre data-role="codeBlock" data-info="" class="language-text"><code>Columna  Bottom-Up  Hybrid  Top-Down
+DCombo     0.5682   0.6212    0.6061
+Combo      0.7348   0.7348    0.6894
+M          0.7727   0.7879    0.7273
+MM         0.9242   0.9167    0.9015
+</code></pre><h4 id="tabla-comparativa---f1-macro">Tabla Comparativa - F1-Macro </h4>
+<pre data-role="codeBlock" data-info="" class="language-text"><code>Columna  Bottom-Up  Hybrid  Top-Down
+DCombo     0.5902   0.6550    0.6437
+Combo      0.7457   0.7511    0.7191
+M          0.7084   0.7489    0.6932
+MM         0.4803   0.7570    0.7318
+</code></pre><h4 id="análisis-de-rendimiento-promedio">Análisis de Rendimiento Promedio </h4>
+<pre data-role="codeBlock" data-info="" class="language-text"><code>Estrategia   Accuracy   F1-Macro
+Top-Down      0.7519     0.7225
+Bottom-Up     0.7633     0.6563
+Hybrid        0.7860     0.7529  ← MEJOR
+</code></pre><hr>
+<h3 id="subsección-116-guardar-configuración-y-resultados-finales">Subsección 11.6: Guardar Configuración y Resultados Finales </h3>
+<h4 id="propósito-15">Propósito </h4>
+<p>Guardar toda la configuración de las 3 estrategias y crear documentación completa.</p>
+<h4 id="archivos-guardados-2">Archivos Guardados </h4>
+<p><strong>1. Configuración Hybrid</strong></p>
+<pre data-role="codeBlock" data-info="python" class="language-python python"><code>hybrid_config <span class="token operator">=</span> <span class="token punctuation">{</span>
+    <span class="token string">'confidence_threshold'</span><span class="token punctuation">:</span> <span class="token number">0.70</span><span class="token punctuation">,</span>
+    <span class="token string">'conflicts_resolved'</span><span class="token punctuation">:</span> <span class="token number">12</span><span class="token punctuation">,</span>
+    <span class="token string">'total_samples'</span><span class="token punctuation">:</span> <span class="token number">132</span><span class="token punctuation">,</span>
+    <span class="token string">'use_bottomup_percentage'</span><span class="token punctuation">:</span> <span class="token number">9.09</span>
+<span class="token punctuation">}</span>
+joblib<span class="token punctuation">.</span>dump<span class="token punctuation">(</span>hybrid_config<span class="token punctuation">,</span> models_dir <span class="token operator">/</span> <span class="token string">'hybrid_config.pkl'</span><span class="token punctuation">)</span>
+</code></pre><p><strong>2. Resultados de las 3 Estrategias</strong></p>
+<pre data-role="codeBlock" data-info="python" class="language-python python"><code>all_results <span class="token operator">=</span> <span class="token punctuation">{</span>
+    <span class="token string">'topdown'</span><span class="token punctuation">:</span> results_topdown<span class="token punctuation">,</span>
+    <span class="token string">'bottomup'</span><span class="token punctuation">:</span> results_bottomup<span class="token punctuation">,</span>
+    <span class="token string">'hybrid'</span><span class="token punctuation">:</span> results_hybrid
+<span class="token punctuation">}</span>
+joblib<span class="token punctuation">.</span>dump<span class="token punctuation">(</span>all_results<span class="token punctuation">,</span> models_dir <span class="token operator">/</span> <span class="token string">'strategy_results.pkl'</span><span class="token punctuation">)</span>
+</code></pre><p><strong>3. Configuración de Cross-Validation</strong></p>
+<pre data-role="codeBlock" data-info="python" class="language-python python"><code>cv_config <span class="token operator">=</span> <span class="token punctuation">{</span>
+    <span class="token string">'n_splits'</span><span class="token punctuation">:</span> <span class="token number">5</span><span class="token punctuation">,</span>
+    <span class="token string">'shuffle'</span><span class="token punctuation">:</span> <span class="token boolean">True</span><span class="token punctuation">,</span>
+    <span class="token string">'random_state'</span><span class="token punctuation">:</span> <span class="token number">42</span>
+<span class="token punctuation">}</span>
+joblib<span class="token punctuation">.</span>dump<span class="token punctuation">(</span>cv_config<span class="token punctuation">,</span> models_dir <span class="token operator">/</span> <span class="token string">'cv_config.pkl'</span><span class="token punctuation">)</span>
+</code></pre><p><strong>4. Preprocessor</strong></p>
+<pre data-role="codeBlock" data-info="python" class="language-python python"><code>joblib<span class="token punctuation">.</span>dump<span class="token punctuation">(</span>preprocessor<span class="token punctuation">,</span> models_dir <span class="token operator">/</span> <span class="token string">'preprocessor.pkl'</span><span class="token punctuation">)</span>
+</code></pre><p><strong>5. README de Modelos</strong><br>
+Se generó un <a href="http://README.md">README.md</a> en <code>models/</code> con:</p>
+<ul>
+<li>Fecha de entrenamiento</li>
+<li>Configuración general (random state, CV, umbral NaN)</li>
+<li>Features después de limpieza</li>
+<li>Muestras de entrenamiento</li>
+<li>Hiperparámetros de cada modelo</li>
+<li>Scores de validación</li>
+<li>Instrucciones de uso</li>
+<li>Tabla de rendimiento comparativo</li>
+</ul>
+<h3 id="subsección-117-conclusiones-y-recomendaciones">Subsección 11.7: Conclusiones y Recomendaciones </h3>
+<h4 id="análisis-comparativo">Análisis Comparativo </h4>
+<p><strong>1. Top-Down vs Bottom-Up</strong></p>
+<pre data-role="codeBlock" data-info="" class="language-text"><code>Bottom-Up es MEJOR por 1.89%
+→ La especialización ayuda levemente
+</code></pre><p><strong>2. Hybrid vs Top-Down</strong></p>
+<pre data-role="codeBlock" data-info="" class="language-text"><code>Hybrid es MEJOR por 3.41%
+→ La validación cruzada mejora significativamente
+</code></pre><p><strong>3. Hybrid vs Bottom-Up</strong></p>
+<pre data-role="codeBlock" data-info="" class="language-text"><code>Hybrid es MEJOR por 1.52%
+→ La combinación supera a ambos individuales
+</code></pre><h4 id="-estrategia-recomendada-hybrid">🏆 Estrategia Recomendada: HYBRID </h4>
+<p><strong>Accuracy promedio: 76.52%</strong></p>
+<p><strong>Ventajas</strong>:<br>
+✓ Combina lo mejor de ambos enfoques<br>
+✓ Validación cruzada entre estrategias<br>
+✓ Más robusto ante casos dudosos<br>
+✓ Usa Bottom-Up solo cuando hay incertidumbre</p>
+<hr>
+<h2 id="-archivos-generados">📊 Archivos Generados </h2>
+<h3 id="parte-1-entrenamiento">Parte 1 (Entrenamiento) </h3>
+<pre data-role="codeBlock" data-info="" class="language-text"><code>labels_mapping.csv           - Mapeo de clases
+cv_results_random_forest.csv - Resultados CV Random Forest
+cv_results_xgb.csv           - Resultados CV XGBoost
+cv_results_nb.csv            - Resultados CV Naive Bayes
+confusion_matrix.csv         - Matriz de confusión
+classification_report.csv    - Reporte de clasificación
+feature_importances.csv      - Importancia de features
+</code></pre><h3 id="parte-2-estrategias">Parte 2 (Estrategias) </h3>
+<pre data-role="codeBlock" data-info="" class="language-text"><code>strategy_comparison.csv      - Comparación de 3 estrategias
+</code></pre><h3 id="modelos-guardados-carpeta-models">Modelos Guardados (carpeta <code>models/</code>) </h3>
+<p><strong>Top-Down:</strong></p>
+<pre data-role="codeBlock" data-info="" class="language-text"><code>topdown_dcombo.pkl           - Pipeline completo del mejor modelo
+topdown_label_encoder.pkl    - Label encoder (si XGBoost)
+topdown_info.pkl             - Metadata del modelo
+</code></pre><p><strong>Bottom-Up (3 niveles):</strong></p>
+<pre data-role="codeBlock" data-info="" class="language-text"><code>bottomup_level1_M.pkl        - Clasificador M (NO/SI)
+bottomup_level2_MM.pkl       - Clasificador MM (NO/SI)
+bottomup_level3_M1M2.pkl     - Clasificador M1 vs M2
+bottomup_best_params.pkl     - Mejores hiperparámetros de cada nivel
+bottomup_validation_scores.pkl - Scores de validación cruzada
+</code></pre><p><strong>Hybrid:</strong></p>
+<pre data-role="codeBlock" data-info="" class="language-text"><code>hybrid_config.pkl            - Configuración de estrategia Hybrid
+</code></pre><p><strong>Configuración General:</strong></p>
+<pre data-role="codeBlock" data-info="" class="language-text"><code>preprocessor.pkl             - ColumnTransformer para preprocesamiento
+cv_config.pkl               - Configuración de cross-validation
+strategy_results.pkl        - Resultados completos de las 3 estrategias
+README.md                   - Documentación de modelos guardados
+</code></pre><h3 id="notebook-de-inferencia">Notebook de Inferencia </h3>
+<pre data-role="codeBlock" data-info="" class="language-text"><code>inference_pipeline.ipynb     - Pipeline limpio para hacer predicciones
+                              (carga modelos sin entrenar)
+</code></pre><hr>
+<h2 id="-métricas-y-evaluación">🔬 Métricas y Evaluación </h2>
+<h3 id="métricas-utilizadas">Métricas Utilizadas </h3>
+<p><strong>1. Accuracy (Exactitud)</strong></p>
+<pre data-role="codeBlock" data-info="" class="language-text"><code>Accuracy = (TP + TN) / (TP + TN + FP + FN)
+</code></pre><p>Porcentaje de predicciones correctas.</p>
+<p><strong>2. F1-Score Macro</strong></p>
+<pre data-role="codeBlock" data-info="" class="language-text"><code>F1-Macro = mean([F1_clase1, F1_clase2, F1_clase3, F1_clase4])
+</code></pre><p>Promedio no ponderado de F1 de todas las clases.<br>
+<strong>Útil para datos desbalanceados</strong>.</p>
+<p><strong>3. Precision Macro</strong></p>
+<pre data-role="codeBlock" data-info="" class="language-text"><code>Precision = TP / (TP + FP)
+</code></pre><p>¿De lo que predijimos positivo, cuánto era realmente positivo?</p>
+<p><strong>4. Recall Macro</strong></p>
+<pre data-role="codeBlock" data-info="" class="language-text"><code>Recall = TP / (TP + FN)
+</code></pre><p>¿De lo que era positivo, cuánto detectamos?</p>
+<hr>
+<h2 id="-próximos-pasos-sugeridos">🚀 Próximos Pasos Sugeridos </h2>
+<ol>
+<li>
+<p><strong>Validar con conjunto de test independiente</strong> ✅ PRIORITARIO</p>
+<ul>
+<li>Usar <code>inference_pipeline.ipynb</code> con X_test.csv</li>
+<li>Evaluar estrategias en datos nunca vistos</li>
+<li>Comparar rendimiento train vs test</li>
+</ul>
+</li>
+<li>
+<p><strong>Analizar casos específicos de error</strong></p>
+<ul>
+<li>¿Qué características tienen los casos mal clasificados?</li>
+<li>¿Hay patrones en los errores?</li>
+<li>Matriz de confusión detallada por estrategia</li>
+</ul>
+</li>
+<li>
+<p>✅ <strong>COMPLETADO: Optimización de hiperparámetros Bottom-Up</strong></p>
+<ul>
+<li><s>GridSearchCV en cada nivel de la cascada</s> ✅</li>
+<li><s>Optimizar max_depth, n_estimators individualmente</s> ✅</li>
+<li><s>Especial enfoque en M1 vs M2</s> ✅</li>
+<li><s>Incluir class_weight para balance</s> ✅</li>
+</ul>
+</li>
+<li>
+<p><strong>Implementar en producción</strong></p>
+<ul>
+<li>API REST con FastAPI/Flask</li>
+<li>Cargar modelos desde <code>models/</code></li>
+<li>Dockerizar la solución</li>
+<li>Monitorear drift de datos</li>
+</ul>
+</li>
+<li>
+<p><strong>Explorar mejoras adicionales</strong></p>
+<ul>
+<li>Feature engineering adicional</li>
+<li>Modelos más complejos (CatBoost, LightGBM)</li>
+<li>Ensemble de estrategias</li>
+<li><strong>Entrenar con GPU</strong> (XGBoost con tree_method='gpu_hist')</li>
+</ul>
+</li>
+<li>
+<p><strong>Usar notebook de inferencia</strong></p>
+<ul>
+<li>Ejecutar <code>inference_pipeline.ipynb</code></li>
+<li>Cargar modelos guardados en <code>models/</code></li>
+<li>Hacer predicciones sin re-entrenar</li>
+<li>Comparar las 3 estrategias en nuevos datos</li>
+</ul>
+</li>
+</ol>
+<hr>
+<h2 id="-notas-importantes">📝 Notas Importantes </h2>
+<h3 id="️-cross-validation-vs-training-predictions">⚠️ Cross-Validation vs Training Predictions </h3>
+<p><strong>CORRECTO</strong> ✅:</p>
+<pre data-role="codeBlock" data-info="python" class="language-python python"><code>y_pred <span class="token operator">=</span> cross_val_predict<span class="token punctuation">(</span>model<span class="token punctuation">,</span> X<span class="token punctuation">,</span> y<span class="token punctuation">,</span> cv<span class="token operator">=</span>cv<span class="token punctuation">)</span>
+</code></pre><p>→ Predicciones "out-of-fold" (sin ver datos de entrenamiento)</p>
+<p><strong>INCORRECTO</strong> ❌:</p>
+<pre data-role="codeBlock" data-info="python" class="language-python python"><code>model<span class="token punctuation">.</span>fit<span class="token punctuation">(</span>X<span class="token punctuation">,</span> y<span class="token punctuation">)</span>
+y_pred <span class="token operator">=</span> model<span class="token punctuation">.</span>predict<span class="token punctuation">(</span>X<span class="token punctuation">)</span>
+</code></pre><p>→ Overfitting garantizado (métricas infladas)</p>
+<h3 id="-data-leakage-prevention">🔍 Data Leakage Prevention </h3>
+<ol>
+<li>
+<p><strong>Preprocessing dentro de Pipeline</strong></p>
+<ul>
+<li>StandardScaler se ajusta solo en train, no en test</li>
+<li>OneHotEncoder aprende categorías solo en train</li>
+</ul>
+</li>
+<li>
+<p><strong>Cross-validation estratificado</strong></p>
+<ul>
+<li>Mantiene proporciones de clases en cada fold</li>
+</ul>
+</li>
+<li>
+<p><strong>Limpieza de datos</strong></p>
+<ul>
+<li>Se hace ANTES de split train/test</li>
+<li>O se hace dentro de build_preprocessor</li>
+</ul>
+</li>
+</ol>
+<hr>
+<h2 id="-contribuciones">🤝 Contribuciones </h2>
+<p>Para mejorar este notebook:</p>
+<ol>
+<li>Fork el repositorio</li>
+<li>Crea una rama (<code>git checkout -b feature/mejora</code>)</li>
+<li>Commit tus cambios (<code>git commit -am 'Añadir mejora'</code>)</li>
+<li>Push a la rama (<code>git push origin feature/mejora</code>)</li>
+<li>Crea un Pull Request</li>
+</ol>
+<hr>
+<h2 id="-licencia">📜 Licencia </h2>
+<p>Este proyecto está bajo licencia MIT.</p>
+<hr>
+<h2 id="-autores">👥 Autores </h2>
+<ul>
+<li><strong>Equipo de Machine Learning</strong> - Clasificación de Miopía</li>
+<li><strong>Dataset</strong>: 132 muestras de pacientes</li>
+<li><strong>Fecha</strong>: Noviembre 2025</li>
+</ul>
+<hr>
+<h2 id="-contacto">📞 Contacto </h2>
+<p>Para preguntas o sugerencias sobre este notebook, por favor contactar al equipo de desarrollo.</p>
+<hr>
+<p><strong>Última actualización</strong>: Noviembre 9, 2025</p>
+<p><strong>Cambios recientes</strong>:</p>
+<ul>
+<li>✅ Implementada optimización Bottom-Up con GridSearchCV</li>
+<li>✅ Búsqueda intensiva de hiperparámetros en nivel M1/M2</li>
+<li>✅ Balance de clases con class_weight='balanced_subsample'</li>
+<li>✅ Guardado de modelos en carpeta <code>models/</code></li>
+<li>✅ Creado notebook de inferencia <code>inference_pipeline.ipynb</code></li>
+<li>✅ README automático de modelos generado</li>
+</ul>
+
+      </div>
+      
+      
+    
+    
+    
+    
+    
+    
+  
+    </body></html>
